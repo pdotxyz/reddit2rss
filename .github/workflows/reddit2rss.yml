@@ -1,0 +1,32 @@
+
+name: reddit2rss
+
+on:
+  schedule:
+    # Daily at 16:15 UTC (8:15 AM Pacific Standard Time)
+    - cron: "15 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Generate Reddit RSS feeds
+        run: |
+          uv run reddit2rss.py $(cat subreddits.txt)
+
+      - name: Commit RSS feeds
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Reddit RSS feeds"
+          file_pattern: "docs/*.xml"
