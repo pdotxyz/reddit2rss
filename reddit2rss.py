@@ -1,388 +1,355 @@
+
 #!/usr/bin/env python3
+"""
+Reddit RSS -> per-subreddit RSS feeds.
+
+Source: Reddit's public Atom (.rss) feeds; no OAuth or API key.
+Selection: first 2 entries from Reddit's top-of-day feed.
+Comments: first 2 comments returned by each post's comment feed.
+"""
+
 # /// script
 # requires-python = ">=3.10"
 # dependencies = ["requests"]
 # ///
 
-"""Build one RSS feed per subreddit from Reddit's public JSON listing.
-
-This MVP makes ordinary unauthenticated GET requests to Reddit's .json
-endpoints. Reddit may block these requests. It does not attempt to bypass
-blocks, login walls, rate limits, or access controls.
-"""
-
-from __future__ import annotations
-
 import argparse
+import email.utils
 import html
+import os
 import re
 import sys
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
-from email.utils import format_datetime
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
-from urllib.parse import quote
+from urllib.parse import urljoin
 
 import requests
 
-APP_VERSION = "0.1.0"
+
 BASE_URL = "https://www.reddit.com"
-USER_AGENT = f"reddit2rss/{APP_VERSION} (Python requests; unauthenticated JSON MVP)"
-POST_LIMIT = 100
-COMMENT_LIMIT = 100
-REQUEST_TIMEOUT = 20
+OUTPUT_DIR = Path("docs")
+REQUEST_INTERVAL_SECONDS = 65
+MAX_POSTS = 2
+MAX_COMMENTS = 2
 
-NS_CONTENT = "http://purl.org/rss/1.0/modules/content/"
-NS_MEDIA = "http://search.yahoo.com/mrss/"
-ET.register_namespace("content", NS_CONTENT)
-ET.register_namespace("media", NS_MEDIA)
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; reddit2rss/1.0; "
+    "+https://github.com/pdotxyz/reddit2rss)"
+)
 
+ATOM_NS = "{http://www.w3.org/2005/Atom}"
+CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}"
+MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 
-class RedditFetchError(RuntimeError):
-    """A Reddit endpoint could not be read without bypassing its restrictions."""
-
-
-def normalize_subreddit(value: str) -> str:
-    """Accept `subreddit`, `r/subreddit`, or a subreddit URL."""
-    candidate = value.strip()
-    candidate = re.sub(r"^https?://(?:www\.)?reddit\.com/r/", "", candidate)
-    candidate = re.sub(r"^r/", "", candidate, flags=re.IGNORECASE)
-    candidate = candidate.strip("/ ")
-    if not re.fullmatch(r"[A-Za-z0-9_]{2,21}", candidate):
-        raise argparse.ArgumentTypeError(f"Invalid subreddit name: {value!r}")
-    return candidate
+ET.register_namespace("content", CONTENT_NS[1:-1])
+ET.register_namespace("media", MEDIA_NS[1:-1])
 
 
-def read_subreddits(path: Path) -> list[str]:
-    if not path.exists():
-        raise FileNotFoundError(f"Subreddit list not found: {path}")
-    names: list[str] = []
-    seen: set[str] = set()
-    for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.strip()
-        if not line or line.startswith("#"):
-            continue
-        name = normalize_subreddit(line)
-        key = name.casefold()
-        if key not in seen:
-            names.append(name)
-            seen.add(key)
-    return names
+class RedditFeedError(Exception):
+    pass
 
 
-def _get_json(url: str, params: dict[str, Any] | None = None) -> Any:
-    """Make one transparent request; do not retry or disguise blocked requests."""
-    try:
-        response = requests.get(
-            url,
-            params=params,
-            headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
-            timeout=REQUEST_TIMEOUT,
-        )
-    except requests.RequestException as exc:
-        raise RedditFetchError(f"Request failed for {url}: {exc}") from exc
+class RedditRSSClient:
+    def __init__(self):
+        self.session = requests.Session()
+        self.session.headers.update({
+            "User-Agent": USER_AGENT,
+            "Accept": "application/atom+xml, application/xml, text/xml",
+        })
+        self.last_request = 0.0
 
-    if response.status_code in (401, 403):
-        raise RedditFetchError(
-            f"Reddit returned HTTP {response.status_code} for {url}. "
-            "The unauthenticated .json endpoint is not available to this run; "
-            "the script will not try to bypass the restriction."
-        )
-    if response.status_code == 429:
-        raise RedditFetchError(
-            f"Reddit returned HTTP 429 for {url}. Rate/access limit reached; "
-            "this MVP does not retry or work around it."
-        )
-    try:
+    def get_feed(self, url):
+        elapsed = time.monotonic() - self.last_request
+        if self.last_request and elapsed < REQUEST_INTERVAL_SECONDS:
+            time.sleep(REQUEST_INTERVAL_SECONDS - elapsed)
+
+        response = self.session.get(url, timeout=30)
+        self.last_request = time.monotonic()
+
+        if response.status_code in (403, 429):
+            raise RedditFeedError(
+                f"Reddit returned HTTP {response.status_code} for {url}"
+            )
+
         response.raise_for_status()
-    except requests.HTTPError as exc:
-        raise RedditFetchError(f"Reddit returned {response.status_code} for {url}") from exc
 
-    try:
-        payload = response.json()
-    except ValueError as exc:
-        raise RedditFetchError(
-            f"Reddit did not return JSON for {url} (possibly a login or block page)."
-        ) from exc
+        try:
+            root = ET.fromstring(response.content)
+        except ET.ParseError as exc:
+            raise RedditFeedError(
+                f"Reddit did not return valid Atom XML for {url}"
+            ) from exc
 
-    if not isinstance(payload, (dict, list)):
-        raise RedditFetchError(f"Unexpected JSON response from {url}")
-    return payload
+        return root
 
 
-def fetch_top_posts(subreddit: str, now: datetime, window_hours: int = 24) -> list[dict[str, Any]]:
-    """Fetch top-of-day posts and enforce a rolling 24-hour cutoff locally."""
-    url = f"{BASE_URL}/r/{quote(subreddit, safe='')}/.json"
-    payload = _get_json(
-        url,
-        params={"limit": POST_LIMIT, "sort": "top", "t": "day", "raw_json": 1},
-    )
-    try:
-        children = payload["data"]["children"]
-    except (KeyError, TypeError) as exc:
-        raise RedditFetchError(f"Unexpected post listing structure for r/{subreddit}") from exc
-
-    cutoff = now.timestamp() - window_hours * 3600
-    posts: list[dict[str, Any]] = []
-    for child in children:
-        if not isinstance(child, dict) or child.get("kind") != "t3":
-            continue
-        data = child.get("data") or {}
-        created = data.get("created_utc")
-        if not isinstance(created, (int, float)) or created < cutoff:
-            continue
-        if data.get("removed_by_category") or data.get("selftext") == "[removed]":
-            continue
-        posts.append(data)
-
-    posts.sort(key=lambda item: (int(item.get("score") or 0), float(item.get("created_utc") or 0)), reverse=True)
-    return posts[:2]
+def child_text(element, tag):
+    node = element.find(ATOM_NS + tag)
+    return node.text.strip() if node is not None and node.text else ""
 
 
-def fetch_top_comments(subreddit: str, post_id: str) -> list[dict[str, Any]]:
-    url = f"{BASE_URL}/comments/{quote(post_id, safe='')}.json"
-    payload = _get_json(
-        url,
-        params={"limit": COMMENT_LIMIT, "sort": "top", "raw_json": 1},
-    )
-    if not isinstance(payload, list) or len(payload) < 2:
-        raise RedditFetchError(f"Unexpected comments response for r/{subreddit} post {post_id}")
-
-    listing = payload[1]
-    try:
-        children = listing["data"]["children"]
-    except (KeyError, TypeError) as exc:
-        raise RedditFetchError(f"Unexpected comments listing for post {post_id}") from exc
-
-    comments: list[dict[str, Any]] = []
-    for child in children:
-        if not isinstance(child, dict) or child.get("kind") != "t1":
-            continue
-        data = child.get("data") or {}
-        # Only top-level comments; ignore nested replies and deleted placeholders.
-        if int(data.get("depth", 0) or 0) != 0:
-            continue
-        body = data.get("body") or ""
-        if not body or body in ("[deleted]", "[removed]"):
-            continue
-        comments.append(data)
-
-    comments.sort(key=lambda item: (int(item.get("score") or 0), float(item.get("created_utc") or 0)), reverse=True)
-    return comments[:2]
-
-
-def _clean_url(value: Any) -> str | None:
-    if not isinstance(value, str):
-        return None
-    value = html.unescape(value.strip())
-    if value.startswith("https://") or value.startswith("http://"):
-        return value
-    return None
-
-
-def extract_image_urls(post: dict[str, Any]) -> list[str]:
-    """Collect direct, preview, and gallery image URLs without downloading them."""
-    urls: list[str] = []
-
-    def add(value: Any) -> None:
-        url = _clean_url(value)
-        if url and url not in urls:
-            urls.append(url)
-
-    # Reddit gallery image URLs, generally ordered according to gallery_data.items.
-    metadata = post.get("media_metadata") or {}
-    gallery = post.get("gallery_data") or {}
-    for item in gallery.get("items", []) if isinstance(gallery, dict) else []:
-        media_id = item.get("media_id") if isinstance(item, dict) else None
-        media = metadata.get(media_id, {}) if isinstance(metadata, dict) else {}
-        source = media.get("s", {}) if isinstance(media, dict) else {}
-        add(source.get("u") if isinstance(source, dict) else None)
-        if not urls and isinstance(media, dict):
-            previews = media.get("p") or []
-            if previews:
-                add(previews[-1].get("u"))
-
-    # Standard Reddit preview images.
-    preview = post.get("preview") or {}
-    for image in preview.get("images", []) if isinstance(preview, dict) else []:
-        source = image.get("source", {}) if isinstance(image, dict) else {}
-        add(source.get("url") if isinstance(source, dict) else None)
-
-    # Direct image URLs (i.redd.it, preview.redd.it, or external image files).
-    direct = _clean_url(post.get("url_overridden_by_dest") or post.get("url"))
-    if direct:
-        path = direct.split("?", 1)[0].lower()
-        if "i.redd.it/" in direct or "preview.redd.it/" in direct or path.endswith(
-            (".jpg", ".jpeg", ".png", ".gif", ".webp")
-        ):
-            add(direct)
-
-    # Reddit's thumbnail is useful for video posts when no preview is exposed.
-    if not urls and post.get("is_video"):
-        add(post.get("thumbnail"))
-
-    return urls
-
-
-def _reddit_html(raw_html: str | None, fallback_text: str | None) -> str:
-    if raw_html:
-        # Reddit's `*_html` fields are HTML-escaped inside JSON.
-        return html.unescape(raw_html)
-    if fallback_text:
-        return "<p>" + html.escape(fallback_text).replace("\n", "<br/>") + "</p>"
+def entry_link(entry):
+    for link in entry.findall(ATOM_NS + "link"):
+        if link.get("rel", "alternate") == "alternate":
+            return link.get("href", "")
     return ""
 
 
-def _post_permalink(subreddit: str, post: dict[str, Any]) -> str:
-    permalink = post.get("permalink")
-    if isinstance(permalink, str) and permalink.startswith("/"):
-        return BASE_URL + permalink
-    post_id = post.get("id", "")
-    return f"{BASE_URL}/r/{quote(subreddit)}/comments/{quote(str(post_id))}/"
+def entry_html(entry):
+    # Reddit may put HTML in either content or summary.
+    for tag in ("content", "summary"):
+        node = entry.find(ATOM_NS + tag)
+        if node is not None and node.text:
+            return node.text
+
+    return ""
 
 
-def _format_post_html(subreddit: str, post: dict[str, Any], comments: list[dict[str, Any]]) -> str:
-    parts: list[str] = []
-    body = _reddit_html(post.get("selftext_html"), post.get("selftext"))
-    if body:
-        parts.append(body)
+def entry_images(entry, body):
+    images = []
 
-    for image_url in extract_image_urls(post):
-        safe_url = html.escape(image_url, quote=True)
-        parts.append(
-            f'<p><a href="{safe_url}"><img src="{safe_url}" '
-            'alt="Reddit post image" style="max-width:100%;height:auto;" /></a></p>'
-        )
+    # Images embedded in the HTML body.
+    for match in re.findall(
+        r"""<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']""",
+        body,
+        flags=re.IGNORECASE,
+    ):
+        if match.startswith("http"):
+            images.append(match)
 
-    destination = post.get("url_overridden_by_dest") or post.get("url")
-    destination_url = _clean_url(destination)
-    if destination_url and destination_url != _post_permalink(subreddit, post):
-        safe_destination = html.escape(destination_url, quote=True)
-        parts.append(f'<p>Link: <a href="{safe_destination}">{safe_destination}</a></p>')
+    # Atom media:thumbnail elements.
+    for node in entry.iter():
+        if node.tag.endswith("thumbnail") or node.tag.endswith("content"):
+            url = node.get("url")
+            if url and re.search(r"\.(jpg|jpeg|png|gif|webp)(\?|$)", url, re.I):
+                images.append(url)
 
-    post_url = html.escape(_post_permalink(subreddit, post), quote=True)
-    author = html.escape(str(post.get("author") or "[deleted]"))
-    score = int(post.get("score") or 0)
-    parts.append(
-        f'<p><strong>r/{html.escape(subreddit)} · {score} points · '
-        f'u/{author}</strong> · <a href="{post_url}">View post on Reddit</a></p>'
+    # Remove duplicates while preserving order.
+    return list(dict.fromkeys(images))
+
+
+def parse_entry(entry):
+    body = entry_html(entry)
+    images = entry_images(entry, body)
+
+    published = (
+        child_text(entry, "published")
+        or child_text(entry, "updated")
     )
 
-    parts.append("<h3>Top comments</h3>")
-    if not comments:
-        parts.append("<p>No visible top-level comments.</p>")
-    for index, comment in enumerate(comments, start=1):
-        comment_body = _reddit_html(comment.get("body_html"), comment.get("body"))
-        commenter = html.escape(str(comment.get("author") or "[deleted]"))
-        comment_score = int(comment.get("score") or 0)
-        comment_id = str(comment.get("id") or "")
-        comment_url = _post_permalink(subreddit, post)
-        if comment_id:
-            comment_url = comment_url.rstrip("/") + "/" + quote(comment_id) + "/"
-        safe_comment_url = html.escape(comment_url, quote=True)
-        parts.append(
-            f'<section><p><strong>Comment #{index} · {comment_score} points · '
-            f'u/{commenter}</strong></p>{comment_body}'
-            f'<p><a href="{safe_comment_url}">View comment</a></p></section>'
-        )
-
-    return "\n".join(parts)
+    return {
+        "id": child_text(entry, "id"),
+        "title": child_text(entry, "title") or "(untitled)",
+        "link": entry_link(entry),
+        "author": child_text(entry, "author"),
+        "published": published,
+        "body": body,
+        "images": images,
+    }
 
 
-def _rss_date(timestamp: float) -> str:
-    return format_datetime(datetime.fromtimestamp(timestamp, tz=timezone.utc))
-
-
-def build_feed_xml(subreddit: str, posts_with_comments: list[tuple[dict[str, Any], list[dict[str, Any]]]], now: datetime) -> bytes:
-    root = ET.Element("rss", {"version": "2.0"})
-    channel = ET.SubElement(root, "channel")
-    ET.SubElement(channel, "title").text = f"r/{subreddit} — Reddit2RSS"
-    ET.SubElement(channel, "link").text = f"{BASE_URL}/r/{subreddit}/"
-    ET.SubElement(channel, "description").text = (
-        f"Top 2 posts from r/{subreddit} in the previous 24 hours, "
-        "including up to two top-level comments per post."
-    )
-    ET.SubElement(channel, "language").text = "en-us"
-    ET.SubElement(channel, "lastBuildDate").text = format_datetime(now.astimezone(timezone.utc))
-
-    for post, comments in posts_with_comments:
-        permalink = _post_permalink(subreddit, post)
-        title = str(post.get("title") or "(untitled Reddit post)")
-        item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = title
-        ET.SubElement(item, "link").text = permalink
-        guid = ET.SubElement(item, "guid", {"isPermaLink": "true"})
-        guid.text = permalink
-        created = post.get("created_utc")
-        if isinstance(created, (int, float)):
-            ET.SubElement(item, "pubDate").text = _rss_date(float(created))
-
-        content_html = _format_post_html(subreddit, post, comments)
-        ET.SubElement(item, "description").text = content_html
-        ET.SubElement(item, f"{{{NS_CONTENT}}}encoded").text = content_html
-
-        for image_url in extract_image_urls(post):
-            ET.SubElement(
-                item,
-                f"{{{NS_MEDIA}}}content",
-                {"url": image_url, "medium": "image"},
-            )
-
-    return ET.tostring(root, encoding="utf-8", xml_declaration=True)
-
-
-def update_subreddit(subreddit: str, output_dir: Path, now: datetime, window_hours: int = 24) -> int:
-    posts = fetch_top_posts(subreddit, now=now, window_hours=window_hours)
-    posts_with_comments = [(post, fetch_top_comments(subreddit, str(post.get("id", "")))) for post in posts]
-
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / f"{subreddit.lower()}.xml"
-    xml_bytes = build_feed_xml(subreddit, posts_with_comments, now=now)
-    output_path.write_bytes(xml_bytes)
-    return len(posts)
-
-
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("subreddits", nargs="*", help="Optional subreddit names; defaults to subreddits.txt")
-    parser.add_argument("--subreddits-file", type=Path, default=Path("subreddits.txt"))
-    parser.add_argument("--output-dir", type=Path, default=Path("docs"))
-    parser.add_argument("--window-hours", type=int, default=24)
-    args = parser.parse_args(argv)
-
-    if args.window_hours <= 0:
-        parser.error("--window-hours must be positive")
+def parse_datetime(value):
+    if not value:
+        return datetime.now(timezone.utc)
 
     try:
-        names = [normalize_subreddit(name) for name in args.subreddits] if args.subreddits else read_subreddits(args.subreddits_file)
-    except (OSError, argparse.ArgumentTypeError) as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
-        return 2
+        parsed = email.utils.parsedate_to_datetime(value)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+    except (TypeError, ValueError):
+        pass
 
-    if not names:
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(
+            timezone.utc
+        )
+    except ValueError:
+        return datetime.now(timezone.utc)
+
+
+def get_entries(root):
+    return root.findall(ATOM_NS + "entry")
+
+
+def fetch_subreddit_posts(client, subreddit):
+    url = f"{BASE_URL}/r/{subreddit}/top/.rss?t=day&limit=100"
+    root = client.get_feed(url)
+
+    entries = [parse_entry(e) for e in get_entries(root)]
+    entries = [e for e in entries if e["link"]]
+
+    # Reddit's top/day feed is already ordered by its ranking.
+    return entries[:MAX_POSTS]
+
+
+def fetch_top_comments(client, post):
+    permalink = post["link"].rstrip("/") + "/.rss"
+    root = client.get_feed(permalink)
+
+    comments = []
+    for entry in get_entries(root):
+        item = parse_entry(entry)
+
+        # Skip the submission itself; keep comment entries.
+        if item["id"].startswith("t1_") or "/comments/" in item["link"]:
+            if item["link"] and item["link"] != post["link"]:
+                comments.append(item)
+
+        if len(comments) >= MAX_COMMENTS:
+            break
+
+    return comments[:MAX_COMMENTS]
+
+
+def add_text(parent, tag, value):
+    node = ET.SubElement(parent, tag)
+    node.text = value or ""
+    return node
+
+
+def add_cdata_html(parent, tag, value):
+    # ElementTree escapes the HTML as XML text. RSS readers decode it.
+    node = ET.SubElement(parent, tag)
+    node.text = value or ""
+    return node
+
+
+def build_item(parent, item, item_type):
+    node = ET.SubElement(parent, "item")
+
+    title_prefix = "💬 " if item_type == "comment" else "🧵 "
+    add_text(node, "title", title_prefix + item["title"])
+    add_text(node, "link", item["link"])
+    add_text(node, "guid", item["id"] or item["link"])
+
+    published = parse_datetime(item["published"])
+    add_text(
+        node,
+        "pubDate",
+        email.utils.format_datetime(published),
+    )
+
+    if item["author"]:
+        add_text(node, "author", item["author"])
+
+    body = item["body"] or ""
+    if item["images"]:
+        image_html = "".join(
+            f'<p><img src="{html.escape(url, quote=True)}" '
+            f'alt="Reddit image" /></p>'
+            for url in item["images"]
+        )
+        body += image_html
+
+    add_cdata_html(node, CONTENT_NS + "encoded", body)
+
+    for image_url in item["images"]:
+        media = ET.SubElement(node, MEDIA_NS + "content")
+        media.set("url", image_url)
+        media.set("medium", "image")
+
+    return node
+
+
+def write_feed(subreddit, posts, comments_by_post):
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_path = OUTPUT_DIR / f"{subreddit}.xml"
+
+    rss = ET.Element("rss", {"version": "2.0"})
+    channel = ET.SubElement(rss, "channel")
+
+    add_text(channel, "title", f"Reddit: r/{subreddit}")
+    add_text(
+        channel,
+        "link",
+        f"{BASE_URL}/r/{subreddit}/",
+    )
+    add_text(
+        channel,
+        "description",
+        f"Top posts of the day from r/{subreddit}, with selected comments.",
+    )
+    add_text(channel, "lastBuildDate", email.utils.format_datetime(
+        datetime.now(timezone.utc)
+    ))
+
+    for post in posts:
+        build_item(channel, post, "post")
+
+        for comment in comments_by_post.get(post["id"], []):
+            build_item(channel, comment, "comment")
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+
+    temp_path = output_path.with_suffix(".xml.tmp")
+    tree.write(temp_path, encoding="utf-8", xml_declaration=True)
+    temp_path.replace(output_path)
+
+
+def process_subreddit(client, subreddit):
+    posts = fetch_subreddit_posts(client, subreddit)
+
+    comments_by_post = {}
+    for post in posts:
+        comments_by_post[post["id"]] = fetch_top_comments(client, post)
+
+    write_feed(subreddit, posts, comments_by_post)
+    print(
+        f"{subreddit}: OK; {len(posts)} posts, "
+        f"{sum(map(len, comments_by_post.values()))} comments"
+    )
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("subreddits", nargs="*")
+    parser.add_argument(
+        "--file",
+        default="subreddits.txt",
+        help="File containing one subreddit name per line",
+    )
+    args = parser.parse_args()
+
+    subreddits = args.subreddits
+    if not subreddits:
+        path = Path(args.file)
+        if path.exists():
+            subreddits = [
+                line.strip().removeprefix("r/")
+                for line in path.read_text().splitlines()
+                if line.strip() and not line.lstrip().startswith("#")
+            ]
+
+    if not subreddits:
         print("No subreddits configured.", file=sys.stderr)
-        return 2
+        return 1
 
-    now = datetime.now(timezone.utc)
-    failures: list[str] = []
-    success_count = 0
-    for subreddit in names:
+    client = RedditRSSClient()
+    failed = []
+
+    for subreddit in subreddits:
+        subreddit = subreddit.strip().removeprefix("r/")
+        if not subreddit:
+            continue
+
         try:
-            count = update_subreddit(subreddit, args.output_dir, now, args.window_hours)
-            print(f"{subreddit}: wrote {count} posts to {args.output_dir / (subreddit.lower() + '.xml')}", flush=True)
-            success_count += 1
-        except Exception as exc:  # keep processing other configured subreddits
-            failures.append(subreddit)
-            print(f"{subreddit}: FAILED; existing feed kept. {exc}", file=sys.stderr, flush=True)
-        # Small, fixed pause between subreddit jobs; no retry on blocked requests.
-        time.sleep(1)
+            process_subreddit(client, subreddit)
+        except Exception as exc:
+            failed.append(subreddit)
+            print(f"{subreddit}: FAILED; existing feed kept. {exc}")
 
-    print(f"SUMMARY: {success_count}/{len(names)} subreddit feeds updated.")
-    if failures:
-        print(f"Failed: {', '.join(failures)}", file=sys.stderr)
-    return 0 if success_count else 1
+    succeeded = len(subreddits) - len(failed)
+    print(f"SUMMARY: {succeeded}/{len(subreddits)} subreddit feeds updated.")
+
+    if failed:
+        print("Failed: " + ", ".join(failed))
+        return 1
+
+    return 0
 
 
 if __name__ == "__main__":
