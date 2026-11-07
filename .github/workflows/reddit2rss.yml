@@ -3,8 +3,8 @@ name: reddit2rss
 
 on:
   schedule:
-    # Daily at 16:15 UTC (8:15 AM Pacific Standard Time)
-    - cron: "15 16 * * *"
+    # 7:00 PM and 7:00 AM Pacific (PST)
+    - cron: "0 3,15 * * *"
   workflow_dispatch:
 
 permissions:
