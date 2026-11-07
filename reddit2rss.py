@@ -1,128 +1,108 @@
 
 #!/usr/bin/env python3
-"""
-Reddit RSS -> per-subreddit RSS feeds.
-
-Source: Reddit's public Atom (.rss) feeds; no OAuth or API key.
-Selection: first 2 entries from Reddit's top-of-day feed.
-Comments: first 2 comments returned by each post's comment feed.
-"""
-
 # /// script
-# requires-python = ">=3.10"
-# dependencies = ["requests"]
+# dependencies = [
+#   "requests",
+#   "beautifulsoup4",
+# ]
 # ///
 
-import argparse
 import email.utils
 import html
-import os
 import re
-import sys
 import time
 import xml.etree.ElementTree as ET
+
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
+from bs4 import BeautifulSoup
 
 
+# Configuration
 BASE_URL = "https://www.reddit.com"
 OUTPUT_DIR = Path("docs")
-REQUEST_INTERVAL_SECONDS = 65
-MAX_POSTS = 2
-MAX_COMMENTS = 2
+SUBREDDITS_FILE = Path("subreddits.txt")
 
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; reddit2rss/1.0; "
-    "+https://github.com/pdotxyz/reddit2rss)"
-)
+POST_LIMIT = 2
+COMMENT_LIMIT = 2
+REQUEST_DELAY = 65
+TIME_PERIOD = "day"
 
-ATOM_NS = "{http://www.w3.org/2005/Atom}"
+USER_AGENT = "Mozilla/5.0 (compatible; Reddit2RSS/1.0)"
+
 CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}"
 MEDIA_NS = "{http://search.yahoo.com/mrss/}"
 
 ET.register_namespace("content", CONTENT_NS[1:-1])
 ET.register_namespace("media", MEDIA_NS[1:-1])
 
-
-class RedditFeedError(Exception):
-    pass
-
-
-class RedditRSSClient:
-    def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": USER_AGENT,
-            "Accept": "application/atom+xml, application/xml, text/xml",
-        })
-        self.last_request = 0.0
-
-    def get_feed(self, url):
-        elapsed = time.monotonic() - self.last_request
-        if self.last_request and elapsed < REQUEST_INTERVAL_SECONDS:
-            time.sleep(REQUEST_INTERVAL_SECONDS - elapsed)
-
-        response = self.session.get(url, timeout=30)
-        self.last_request = time.monotonic()
-
-        if response.status_code in (403, 429):
-            raise RedditFeedError(
-                f"Reddit returned HTTP {response.status_code} for {url}"
-            )
-
-        response.raise_for_status()
-
-        try:
-            root = ET.fromstring(response.content)
-        except ET.ParseError as exc:
-            raise RedditFeedError(
-                f"Reddit did not return valid Atom XML for {url}"
-            ) from exc
-
-        return root
+session = requests.Session()
+session.headers.update({"User-Agent": USER_AGENT})
 
 
-def child_text(element, tag):
-    node = element.find(ATOM_NS + tag)
-    return node.text.strip() if node is not None and node.text else ""
+def add_text(parent, tag, value):
+    element = ET.SubElement(parent, tag)
+    element.text = str(value or "")
+    return element
 
 
-def entry_link(entry):
-    for link in entry.findall(ATOM_NS + "link"):
-        if link.get("rel", "alternate") == "alternate":
-            return link.get("href", "")
-    return ""
+def add_cdata_html(parent, tag, value):
+    # ElementTree safely XML-escapes the HTML text.
+    # RSS readers decode it when rendering content:encoded.
+    element = ET.SubElement(parent, tag)
+    element.text = value or ""
+    return element
+
+
+def parse_datetime(value):
+    if not value:
+        return datetime.now(timezone.utc)
+
+    try:
+        from email.utils import parsedate_to_datetime
+        parsed = parsedate_to_datetime(value)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+    except Exception:
+        pass
+
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+    except Exception:
+        return datetime.now(timezone.utc)
 
 
 def entry_html(entry):
-    # Reddit may put HTML in either content or summary.
-    for tag in ("content", "summary"):
-        node = entry.find(ATOM_NS + tag)
-        if node is not None and node.text:
-            return node.text
+    """Extract HTML content from an Atom entry."""
+    for key in ("content", "summary"):
+        value = entry.find(f"{{http://www.w3.org/2005/Atom}}{key}")
+        if value is not None:
+            return "".join(value.itertext()).strip()
 
     return ""
 
 
-def entry_images(entry, body):
+def entry_images(entry, body=""):
+    """Extract image URLs from an Atom entry."""
     images = []
 
-    # Images embedded in the HTML body.
-    for match in re.findall(
-        r"""<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']""",
-        body,
-        flags=re.IGNORECASE,
-    ):
-        if match.startswith("http"):
-            images.append(match)
+    soup = BeautifulSoup(body, "html.parser")
 
-    # Atom media:thumbnail elements.
-    for node in entry.iter():
-        if node.tag.endswith("thumbnail") or node.tag.endswith("content"):
-            url = node.get("url")
+    for image in soup.find_all("img"):
+        src = image.get("src")
+        if src:
+            images.append(urljoin(BASE_URL, src))
+
+    for element in entry.iter():
+        if element.tag.endswith(("content", "thumbnail")):
+            url = element.attrib.get("url")
             if url and re.search(r"\.(jpg|jpeg|png|gif|webp)(\?|$)", url, re.I):
                 images.append(url)
 
@@ -131,122 +111,187 @@ def entry_images(entry, body):
 
 
 def parse_entry(entry):
-    body = entry_html(entry)
-    images = entry_images(entry, body)
+    """Convert one Atom entry into a post/comment dictionary."""
+    ns = "{http://www.w3.org/2005/Atom}"
+
+    title = entry.findtext(f"{ns}title", default="").strip()
+
+    link = ""
+    for element in entry.findall(f"{ns}link"):
+        if element.attrib.get("rel", "alternate") == "alternate":
+            link = element.attrib.get("href", "")
+            break
+
+    if not link:
+        link_element = entry.find(f"{ns}link")
+        if link_element is not None:
+            link = link_element.attrib.get("href", "")
+
+    link = urljoin(BASE_URL, link)
+
+    author_element = entry.find(f"{ns}author")
+    author = ""
+    if author_element is not None:
+        author = author_element.findtext(
+            f"{ns}name", default=""
+        ).strip()
 
     published = (
-        child_text(entry, "published")
-        or child_text(entry, "updated")
+        entry.findtext(f"{ns}published")
+        or entry.findtext(f"{ns}updated")
+        or ""
     )
 
+    body = entry_html(entry)
+
     return {
-        "id": child_text(entry, "id"),
-        "title": child_text(entry, "title") or "(untitled)",
-        "link": entry_link(entry),
-        "author": child_text(entry, "author"),
+        "id": entry.findtext(f"{ns}id", default="").strip(),
+        "title": title,
+        "link": link,
+        "author": author,
         "published": published,
         "body": body,
-        "images": images,
+        "images": entry_images(entry, body),
     }
 
 
-def parse_datetime(value):
-    if not value:
-        return datetime.now(timezone.utc)
+def fetch_feed(url):
+    """Fetch and parse a Reddit Atom RSS feed."""
+    response = session.get(url, timeout=30)
+    response.raise_for_status()
+
+    root = ET.fromstring(response.content)
+
+    ns = "{http://www.w3.org/2005/Atom}"
+    entries = root.findall(f"{ns}entry")
+
+    return [parse_entry(entry) for entry in entries]
+
+
+def fetch_posts(subreddit):
+    """Fetch the top posts from the daily subreddit feed."""
+    url = (
+        f"{BASE_URL}/r/{subreddit}/top/.rss"
+        f"?t={TIME_PERIOD}&limit=100"
+    )
+
+    print(f"Fetching posts: r/{subreddit}")
+
+    entries = fetch_feed(url)
+
+    # Keep only actual posts with links.
+    posts = [
+        entry for entry in entries
+        if entry["link"] and "/comments/" in entry["link"]
+    ]
+
+    return posts[:POST_LIMIT]
+
+
+def fetch_top_comments(post):
+    """
+    Fetch comments from the post's RSS feed.
+
+    Reddit RSS does not expose comment scores reliably,
+    so these are the first comments returned by the feed,
+    not guaranteed highest-score comments.
+    """
+    post_url = post["link"].rstrip("/")
+
+    if not post_url.endswith(".rss"):
+        comment_url = post_url + ".rss"
+    else:
+        comment_url = post_url
+
+    print(f"  Fetching comments: {post_url}")
+
+    time.sleep(REQUEST_DELAY)
 
     try:
-        parsed = email.utils.parsedate_to_datetime(value)
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=timezone.utc)
-        return parsed.astimezone(timezone.utc)
-    except (TypeError, ValueError):
-        pass
+        entries = fetch_feed(comment_url)
 
-    try:
-        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(
-            timezone.utc
-        )
-    except ValueError:
-        return datetime.now(timezone.utc)
+        # Skip the submission itself if it appears in the feed.
+        comments = [
+            entry for entry in entries
+            if entry["link"]
+            and entry["link"] != post["link"]
+            and "/comments/" in entry["link"]
+        ]
 
+        return comments[:COMMENT_LIMIT]
 
-def get_entries(root):
-    return root.findall(ATOM_NS + "entry")
+    except Exception as exc:
+        print(f"  Comment fetch failed: {exc}")
+        return []
 
 
-def fetch_subreddit_posts(client, subreddit):
-    url = f"{BASE_URL}/r/{subreddit}/top/.rss?t=day&limit=100"
-    root = client.get_feed(url)
+def build_item(parent, post, comments=None):
+    """Create one RSS item with comments nested in its HTML content."""
+    comments = comments or []
 
-    entries = [parse_entry(e) for e in get_entries(root)]
-    entries = [e for e in entries if e["link"]]
-
-    # Reddit's top/day feed is already ordered by its ranking.
-    return entries[:MAX_POSTS]
-
-
-def fetch_top_comments(client, post):
-    permalink = post["link"].rstrip("/") + "/.rss"
-    root = client.get_feed(permalink)
-
-    comments = []
-    for entry in get_entries(root):
-        item = parse_entry(entry)
-
-        # Skip the submission itself; keep comment entries.
-        if item["id"].startswith("t1_") or "/comments/" in item["link"]:
-            if item["link"] and item["link"] != post["link"]:
-                comments.append(item)
-
-        if len(comments) >= MAX_COMMENTS:
-            break
-
-    return comments[:MAX_COMMENTS]
-
-
-def add_text(parent, tag, value):
-    node = ET.SubElement(parent, tag)
-    node.text = value or ""
-    return node
-
-
-def add_cdata_html(parent, tag, value):
-    # ElementTree escapes the HTML as XML text. RSS readers decode it.
-    node = ET.SubElement(parent, tag)
-    node.text = value or ""
-    return node
-
-
-def build_item(parent, item, item_type):
     node = ET.SubElement(parent, "item")
 
-    title_prefix = "💬 " if item_type == "comment" else "🧵 "
-    add_text(node, "title", title_prefix + item["title"])
-    add_text(node, "link", item["link"])
-    add_text(node, "guid", item["id"] or item["link"])
+    add_text(node, "title", "🧵 " + post["title"])
+    add_text(node, "link", post["link"])
+    add_text(node, "guid", post["id"] or post["link"])
 
-    published = parse_datetime(item["published"])
+    published = parse_datetime(post["published"])
     add_text(
         node,
         "pubDate",
         email.utils.format_datetime(published),
     )
 
-    if item["author"]:
-        add_text(node, "author", item["author"])
+    if post["author"]:
+        add_text(node, "author", post["author"])
 
-    body = item["body"] or ""
-    if item["images"]:
-        image_html = "".join(
-            f'<p><img src="{html.escape(url, quote=True)}" '
-            f'alt="Reddit image" /></p>'
-            for url in item["images"]
+    body = post["body"] or ""
+
+    # Add post images.
+    for image_url in post["images"]:
+        safe_url = html.escape(image_url, quote=True)
+        body += (
+            f'<p><img src="{safe_url}" '
+            f'alt="Reddit post image" /></p>'
         )
-        body += image_html
+
+    # Nest comments inside the post content.
+    if comments:
+        body += "<hr/><h3>Top comments</h3>"
+
+        for index, comment in enumerate(comments, start=1):
+            author = html.escape(
+                comment["author"] or "Reddit user"
+            )
+            link = html.escape(comment["link"], quote=True)
+
+            body += f"""
+            <div class="reddit-comment">
+              <h4>Comment {index} by {author}</h4>
+              <p><a href="{link}">View comment on Reddit</a></p>
+              <blockquote>{comment["body"] or ""}</blockquote>
+            """
+
+            for image_url in comment["images"]:
+                safe_url = html.escape(image_url, quote=True)
+                body += (
+                    f'<p><img src="{safe_url}" '
+                    f'alt="Reddit comment image" /></p>'
+                )
+
+            body += "</div><hr/>"
 
     add_cdata_html(node, CONTENT_NS + "encoded", body)
 
-    for image_url in item["images"]:
+    # Media RSS image metadata.
+    all_images = list(post["images"])
+
+    for comment in comments:
+        all_images.extend(comment["images"])
+
+    all_images = list(dict.fromkeys(all_images))
+
+    for image_url in all_images:
         media = ET.SubElement(node, MEDIA_NS + "content")
         media.set("url", image_url)
         media.set("medium", "image")
@@ -255,7 +300,9 @@ def build_item(parent, item, item_type):
 
 
 def write_feed(subreddit, posts, comments_by_post):
+    """Write one RSS feed for a subreddit."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
     output_path = OUTPUT_DIR / f"{subreddit}.xml"
 
     rss = ET.Element("rss", {"version": "2.0"})
@@ -270,87 +317,108 @@ def write_feed(subreddit, posts, comments_by_post):
     add_text(
         channel,
         "description",
-        f"Top posts of the day from r/{subreddit}, with selected comments.",
+        f"Top posts of the day from r/{subreddit}, "
+        "with comments nested under each post.",
     )
-    add_text(channel, "lastBuildDate", email.utils.format_datetime(
-        datetime.now(timezone.utc)
-    ))
+    add_text(
+        channel,
+        "lastBuildDate",
+        email.utils.format_datetime(
+            datetime.now(timezone.utc)
+        ),
+    )
 
     for post in posts:
-        build_item(channel, post, "post")
-
-        for comment in comments_by_post.get(post["id"], []):
-            build_item(channel, comment, "comment")
+        comments = comments_by_post.get(post["id"], [])
+        build_item(channel, post, comments)
 
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
 
     temp_path = output_path.with_suffix(".xml.tmp")
-    tree.write(temp_path, encoding="utf-8", xml_declaration=True)
+
+    tree.write(
+        temp_path,
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
     temp_path.replace(output_path)
 
+    print(f"  Wrote {output_path}")
 
-def process_subreddit(client, subreddit):
-    posts = fetch_subreddit_posts(client, subreddit)
+
+def load_subreddits():
+    if not SUBREDDITS_FILE.exists():
+        raise FileNotFoundError(
+            f"Missing input file: {SUBREDDITS_FILE}"
+        )
+
+    subreddits = []
+
+    for line in SUBREDDITS_FILE.read_text().splitlines():
+        value = line.strip()
+
+        if not value or value.startswith("#"):
+            continue
+
+        value = value.removeprefix("r/").strip("/")
+
+        if value:
+            subreddits.append(value)
+
+    return list(dict.fromkeys(subreddits))
+
+
+def process_subreddit(subreddit):
+    """Fetch posts/comments and update one subreddit feed."""
+    print(f"\nProcessing r/{subreddit}")
+
+    posts = fetch_posts(subreddit)
+
+    if not posts:
+        print(f"  No posts found for r/{subreddit}")
+        return
 
     comments_by_post = {}
-    for post in posts:
-        comments_by_post[post["id"]] = fetch_top_comments(client, post)
+
+    for index, post in enumerate(posts):
+        if index > 0:
+            time.sleep(REQUEST_DELAY)
+
+        comments = fetch_top_comments(post)
+        comments_by_post[post["id"]] = comments
 
     write_feed(subreddit, posts, comments_by_post)
-    print(
-        f"{subreddit}: OK; {len(posts)} posts, "
-        f"{sum(map(len, comments_by_post.values()))} comments"
-    )
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("subreddits", nargs="*")
-    parser.add_argument(
-        "--file",
-        default="subreddits.txt",
-        help="File containing one subreddit name per line",
-    )
-    args = parser.parse_args()
-
-    subreddits = args.subreddits
-    if not subreddits:
-        path = Path(args.file)
-        if path.exists():
-            subreddits = [
-                line.strip().removeprefix("r/")
-                for line in path.read_text().splitlines()
-                if line.strip() and not line.lstrip().startswith("#")
-            ]
+    subreddits = load_subreddits()
 
     if not subreddits:
-        print("No subreddits configured.", file=sys.stderr)
-        return 1
+        print("No subreddits configured.")
+        return
 
-    client = RedditRSSClient()
+    print(f"Found {len(subreddits)} subreddits: {subreddits}")
+
     failed = []
 
-    for subreddit in subreddits:
-        subreddit = subreddit.strip().removeprefix("r/")
-        if not subreddit:
-            continue
+    for index, subreddit in enumerate(subreddits):
+        if index > 0:
+            time.sleep(REQUEST_DELAY)
 
         try:
-            process_subreddit(client, subreddit)
+            process_subreddit(subreddit)
         except Exception as exc:
+            print(f"ERROR processing r/{subreddit}: {exc}")
             failed.append(subreddit)
-            print(f"{subreddit}: FAILED; existing feed kept. {exc}")
 
-    succeeded = len(subreddits) - len(failed)
-    print(f"SUMMARY: {succeeded}/{len(subreddits)} subreddit feeds updated.")
+    print("\nFinished.")
 
     if failed:
-        print("Failed: " + ", ".join(failed))
-        return 1
-
-    return 0
+        print(f"Failed subreddits: {failed}")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
