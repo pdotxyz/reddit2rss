@@ -23,7 +23,8 @@ jobs:
 
       - name: Generate Reddit RSS feeds
         run: |
-          uv run reddit2rss.py $(cat subreddits.txt)
+          mapfile -t SUBREDDITS < <(grep -vE '^[[:space:]]*(#|$)' subreddits.txt)
+          uv run reddit2rss.py "${SUBREDDITS[@]}"
 
       - name: Commit RSS feeds
         uses: stefanzweifel/git-auto-commit-action@v5
