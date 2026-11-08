@@ -21,7 +21,10 @@ import requests
 from bs4 import BeautifulSoup
 
 
+# ============================================================
 # Configuration
+# ============================================================
+
 BASE_URL = "https://www.reddit.com"
 OUTPUT_DIR = Path("docs")
 SUBREDDITS_FILE = Path("subreddits.txt")
@@ -43,6 +46,10 @@ session = requests.Session()
 session.headers.update({"User-Agent": USER_AGENT})
 
 
+# ============================================================
+# XML helpers
+# ============================================================
+
 def add_text(parent, tag, value):
     element = ET.SubElement(parent, tag)
     element.text = str(value or "")
@@ -50,12 +57,15 @@ def add_text(parent, tag, value):
 
 
 def add_cdata_html(parent, tag, value):
-    # ElementTree safely XML-escapes the HTML text.
-    # RSS readers decode it when rendering content:encoded.
+    # ElementTree safely escapes HTML as XML text.
     element = ET.SubElement(parent, tag)
     element.text = value or ""
     return element
 
+
+# ============================================================
+# Date and Atom RSS parsing
+# ============================================================
 
 def parse_datetime(value):
     if not value:
@@ -64,25 +74,36 @@ def parse_datetime(value):
     try:
         from email.utils import parsedate_to_datetime
         parsed = parsedate_to_datetime(value)
+
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=timezone.utc)
+
         return parsed.astimezone(timezone.utc)
+
     except Exception:
         pass
 
     try:
-        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        parsed = datetime.fromisoformat(
+            value.replace("Z", "+00:00")
+        )
+
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=timezone.utc)
+
         return parsed.astimezone(timezone.utc)
+
     except Exception:
         return datetime.now(timezone.utc)
 
 
 def entry_html(entry):
     """Extract HTML content from an Atom entry."""
+    ns = "{http://www.w3.org/2005/Atom}"
+
     for key in ("content", "summary"):
-        value = entry.find(f"{{http://www.w3.org/2005/Atom}}{key}")
+        value = entry.find(f"{ns}{key}")
+
         if value is not None:
             return "".join(value.itertext()).strip()
 
@@ -97,26 +118,35 @@ def entry_images(entry, body=""):
 
     for image in soup.find_all("img"):
         src = image.get("src")
+
         if src:
             images.append(urljoin(BASE_URL, src))
 
     for element in entry.iter():
         if element.tag.endswith(("content", "thumbnail")):
             url = element.attrib.get("url")
-            if url and re.search(r"\.(jpg|jpeg|png|gif|webp)(\?|$)", url, re.I):
+
+            if url and re.search(
+                r"\.(jpg|jpeg|png|gif|webp)(\?|$)",
+                url,
+                re.I,
+            ):
                 images.append(url)
 
-    # Remove duplicates while preserving order.
     return list(dict.fromkeys(images))
 
 
 def parse_entry(entry):
-    """Convert one Atom entry into a post/comment dictionary."""
+    """Convert one Atom entry into a dictionary."""
     ns = "{http://www.w3.org/2005/Atom}"
 
-    title = entry.findtext(f"{ns}title", default="").strip()
+    title = entry.findtext(
+        f"{ns}title",
+        default="",
+    ).strip()
 
     link = ""
+
     for element in entry.findall(f"{ns}link"):
         if element.attrib.get("rel", "alternate") == "alternate":
             link = element.attrib.get("href", "")
@@ -124,6 +154,7 @@ def parse_entry(entry):
 
     if not link:
         link_element = entry.find(f"{ns}link")
+
         if link_element is not None:
             link = link_element.attrib.get("href", "")
 
@@ -131,9 +162,11 @@ def parse_entry(entry):
 
     author_element = entry.find(f"{ns}author")
     author = ""
+
     if author_element is not None:
         author = author_element.findtext(
-            f"{ns}name", default=""
+            f"{ns}name",
+            default="",
         ).strip()
 
     published = (
@@ -145,7 +178,10 @@ def parse_entry(entry):
     body = entry_html(entry)
 
     return {
-        "id": entry.findtext(f"{ns}id", default="").strip(),
+        "id": entry.findtext(
+            f"{ns}id",
+            default="",
+        ).strip(),
         "title": title,
         "link": link,
         "author": author,
@@ -168,8 +204,12 @@ def fetch_feed(url):
     return [parse_entry(entry) for entry in entries]
 
 
+# ============================================================
+# Reddit fetching
+# ============================================================
+
 def fetch_posts(subreddit):
-    """Fetch the top posts from the daily subreddit feed."""
+    """Fetch top posts from the daily subreddit feed."""
     url = (
         f"{BASE_URL}/r/{subreddit}/top/.rss"
         f"?t={TIME_PERIOD}&limit=100"
@@ -179,29 +219,31 @@ def fetch_posts(subreddit):
 
     entries = fetch_feed(url)
 
-    # Keep only actual posts with links.
     posts = [
         entry for entry in entries
         if entry["link"] and "/comments/" in entry["link"]
     ]
 
-    return posts[:POST_LIMIT]
+    total_posts = len(posts)
+
+    selected_posts = posts[:POST_LIMIT]
+
+    print(f"  Posts found: {total_posts}")
+    print(f"  Posts selected: {len(selected_posts)}")
+
+    return selected_posts, total_posts
 
 
 def fetch_top_comments(post):
     """
-    Fetch comments from the post's RSS feed.
+    Fetch comments from a post's RSS feed.
 
-    Reddit RSS does not expose comment scores reliably,
-    so these are the first comments returned by the feed,
-    not guaranteed highest-score comments.
+    Reddit RSS does not reliably expose comment scores.
+    Therefore, these are the first comments returned,
+    not guaranteed highest-scoring comments.
     """
     post_url = post["link"].rstrip("/")
-
-    if not post_url.endswith(".rss"):
-        comment_url = post_url + ".rss"
-    else:
-        comment_url = post_url
+    comment_url = post_url + ".rss"
 
     print(f"  Fetching comments: {post_url}")
 
@@ -210,7 +252,6 @@ def fetch_top_comments(post):
     try:
         entries = fetch_feed(comment_url)
 
-        # Skip the submission itself if it appears in the feed.
         comments = [
             entry for entry in entries
             if entry["link"]
@@ -218,24 +259,35 @@ def fetch_top_comments(post):
             and "/comments/" in entry["link"]
         ]
 
-        return comments[:COMMENT_LIMIT]
+        total_comments = len(comments)
+        selected_comments = comments[:COMMENT_LIMIT]
+
+        print(f"    Comments found: {total_comments}")
+        print(f"    Comments selected: {len(selected_comments)}")
+
+        return selected_comments, total_comments
 
     except Exception as exc:
-        print(f"  Comment fetch failed: {exc}")
-        return []
+        print(f"    Comment fetch failed: {exc}")
+        return [], 0
 
+
+# ============================================================
+# RSS item generation
+# ============================================================
 
 def build_item(parent, post, comments=None):
-    """Create one RSS item with comments nested in its HTML content."""
+    """Create one RSS item with nested comments."""
     comments = comments or []
 
     node = ET.SubElement(parent, "item")
 
-    add_text(node, "title", "🧵 " + post["title"])
+    add_text(node, "title", "🍿 " + post["title"])
     add_text(node, "link", post["link"])
     add_text(node, "guid", post["id"] or post["link"])
 
     published = parse_datetime(post["published"])
+
     add_text(
         node,
         "pubDate",
@@ -247,23 +299,31 @@ def build_item(parent, post, comments=None):
 
     body = post["body"] or ""
 
-    # Add post images.
+    # Post images.
     for image_url in post["images"]:
         safe_url = html.escape(image_url, quote=True)
+
         body += (
             f'<p><img src="{safe_url}" '
             f'alt="Reddit post image" /></p>'
         )
 
-    # Nest comments inside the post content.
+    # Nested comments.
     if comments:
-        body += "<hr/><h3>Top comments</h3>"
+        body += (
+            "<hr/>"
+            f"<h3>Comments ({len(comments)})</h3>"
+        )
 
         for index, comment in enumerate(comments, start=1):
             author = html.escape(
                 comment["author"] or "Reddit user"
             )
-            link = html.escape(comment["link"], quote=True)
+
+            link = html.escape(
+                comment["link"],
+                quote=True,
+            )
 
             body += f"""
             <div class="reddit-comment">
@@ -273,7 +333,11 @@ def build_item(parent, post, comments=None):
             """
 
             for image_url in comment["images"]:
-                safe_url = html.escape(image_url, quote=True)
+                safe_url = html.escape(
+                    image_url,
+                    quote=True,
+                )
+
                 body += (
                     f'<p><img src="{safe_url}" '
                     f'alt="Reddit comment image" /></p>'
@@ -281,7 +345,11 @@ def build_item(parent, post, comments=None):
 
             body += "</div><hr/>"
 
-    add_cdata_html(node, CONTENT_NS + "encoded", body)
+    add_cdata_html(
+        node,
+        CONTENT_NS + "encoded",
+        body,
+    )
 
     # Media RSS image metadata.
     all_images = list(post["images"])
@@ -292,34 +360,63 @@ def build_item(parent, post, comments=None):
     all_images = list(dict.fromkeys(all_images))
 
     for image_url in all_images:
-        media = ET.SubElement(node, MEDIA_NS + "content")
+        media = ET.SubElement(
+            node,
+            MEDIA_NS + "content",
+        )
+
         media.set("url", image_url)
         media.set("medium", "image")
 
     return node
 
 
-def write_feed(subreddit, posts, comments_by_post):
+# ============================================================
+# Feed generation
+# ============================================================
+
+def write_feed(
+    subreddit,
+    posts,
+    comments_by_post,
+    post_stats,
+    comment_stats,
+):
     """Write one RSS feed for a subreddit."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     output_path = OUTPUT_DIR / f"{subreddit}.xml"
 
+    total_comments_found = sum(comment_stats.values())
+    total_comments_included = sum(
+        len(comments)
+        for comments in comments_by_post.values()
+    )
+
     rss = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
 
-    add_text(channel, "title", f"Reddit: r/{subreddit}")
+    add_text(
+        channel,
+        "title",
+        f"🍿 Reddit: r/{subreddit}",
+    )
+
     add_text(
         channel,
         "link",
         f"{BASE_URL}/r/{subreddit}/",
     )
-    add_text(
-        channel,
-        "description",
-        f"Top posts of the day from r/{subreddit}, "
-        "with comments nested under each post.",
+
+    description = (
+        f"Top posts of the day from r/{subreddit}. "
+        f"Posts: {len(posts)}/{post_stats}. "
+        f"Comments: {total_comments_included}/"
+        f"{total_comments_found}."
     )
+
+    add_text(channel, "description", description)
+
     add_text(
         channel,
         "lastBuildDate",
@@ -345,8 +442,17 @@ def write_feed(subreddit, posts, comments_by_post):
 
     temp_path.replace(output_path)
 
-    print(f"  Wrote {output_path}")
+    print(f"  Feed written: {output_path}")
+    print(
+        f"  Final stats: "
+        f"{len(posts)} posts, "
+        f"{total_comments_included} comments"
+    )
 
+
+# ============================================================
+# Subreddit processing
+# ============================================================
 
 def load_subreddits():
     if not SUBREDDITS_FILE.exists():
@@ -372,25 +478,52 @@ def load_subreddits():
 
 def process_subreddit(subreddit):
     """Fetch posts/comments and update one subreddit feed."""
-    print(f"\nProcessing r/{subreddit}")
+    print(f"\n{'=' * 50}")
+    print(f"Processing r/{subreddit}")
+    print(f"{'=' * 50}")
 
-    posts = fetch_posts(subreddit)
+    posts, total_posts = fetch_posts(subreddit)
 
     if not posts:
-        print(f"  No posts found for r/{subreddit}")
+        print(f"No posts found for r/{subreddit}")
         return
 
     comments_by_post = {}
+    comment_stats = {}
 
     for index, post in enumerate(posts):
         if index > 0:
             time.sleep(REQUEST_DELAY)
 
-        comments = fetch_top_comments(post)
+        comments, total_comments = fetch_top_comments(post)
+
         comments_by_post[post["id"]] = comments
+        comment_stats[post["id"]] = total_comments
 
-    write_feed(subreddit, posts, comments_by_post)
+    write_feed(
+        subreddit=subreddit,
+        posts=posts,
+        comments_by_post=comments_by_post,
+        post_stats=total_posts,
+        comment_stats=comment_stats,
+    )
 
+    print(f"\nStatistics for r/{subreddit}:")
+    print(f"  Posts found: {total_posts}")
+    print(f"  Posts published: {len(posts)}")
+    print(
+        "  Comments found: "
+        f"{sum(comment_stats.values())}"
+    )
+    print(
+        "  Comments published: "
+        f"{sum(len(c) for c in comments_by_post.values())}"
+    )
+
+
+# ============================================================
+# Main
+# ============================================================
 
 def main():
     subreddits = load_subreddits()
@@ -399,7 +532,7 @@ def main():
         print("No subreddits configured.")
         return
 
-    print(f"Found {len(subreddits)} subreddits: {subreddits}")
+    print(f"Subreddits: {subreddits}")
 
     failed = []
 
@@ -409,14 +542,19 @@ def main():
 
         try:
             process_subreddit(subreddit)
+
         except Exception as exc:
             print(f"ERROR processing r/{subreddit}: {exc}")
             failed.append(subreddit)
 
-    print("\nFinished.")
+    print("\n" + "=" * 50)
+    print("RUN SUMMARY")
+    print("=" * 50)
+    print(f"Subreddits processed: {len(subreddits) - len(failed)}")
+    print(f"Subreddits failed: {len(failed)}")
 
     if failed:
-        print(f"Failed subreddits: {failed}")
+        print(f"Failed: {', '.join(failed)}")
         raise SystemExit(1)
 
 
