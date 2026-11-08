@@ -2,10 +2,9 @@
 name: reddit2rss
 
 on:
-  schedule:
-    # 7:00 PM and 7:00 AM Pacific (PST)
-    - cron: "0 3,15 * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [daily-reddit-rss]
 
 permissions:
   contents: write
