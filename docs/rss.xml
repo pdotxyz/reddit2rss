@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>🍿 Reddit: r/rss</title>
+    <link>https://www.reddit.com/r/rss/</link>
+    <description>Top 1 daily posts from r/rss, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Sun, 08 Nov 2026 19:07:58 +0000</lastBuildDate>
+    <item>
+      <title>🍿 Feedler 1.9.1 gets a brand new dedicated layout for YouTube feeds</title>
+      <link>https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/</link>
+      <guid>t3_1xqujcy</guid>
+      <pubDate>Sun, 08 Nov 2026 09:30:16 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;If you follow YouTube channels via RSS, the new 1.9.1 update of Feedler should interest you because it offers a brand new dedicated layout as well as new features:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;The embed player is now smoother and show first the thumbnail and turns into the player as soon as the player is ready&lt;/li&gt; &lt;li&gt;The length of the video is extracted and displayed&lt;/li&gt; &lt;li&gt;When the video has chapters, they are extracted and shown as a timeline under the video with the title and the length of each chapter. You can tap a chapter to go to directly to the selected one and the timeline always shows the current one. &lt;/li&gt; &lt;li&gt;Links are extracted from the description to be moved in a dedicated Links section&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Regarding the layout itself it is difficult to explain without pictures so you will therefore see an overview on this dedicated post: &lt;a href="https://feedlerapp.com/blog/youtube-layout.html"&gt;https://feedlerapp.com/blog/youtube-layout.html&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/FeedlerApp"&gt; /u/FeedlerApp &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/FeedlerApp&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/ForeignAd6708&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/19sbul6j0dk79/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Android linux ? Please. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/420vegan420&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/19sc6b10va16q/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Best RSS app&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+  </channel>
+</rss>

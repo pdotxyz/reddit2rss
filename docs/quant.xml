@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>🍿 Reddit: r/quant</title>
+    <link>https://www.reddit.com/r/quant/</link>
+    <description>Top 2 daily posts from r/quant, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Sun, 08 Nov 2026 19:33:01 +0000</lastBuildDate>
+    <item>
+      <title>🍿 Jane Street Blog - Our software engineering interviews are changing (a little)</title>
+      <link>https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/</link>
+      <guid>t3_1xqplkf</guid>
+      <pubDate>Sun, 08 Nov 2026 04:19:26 +0000</pubDate>
+      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/madredditscientist"&gt; /u/madredditscientist &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/madredditscientist&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/Lopatron&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/19sc3gymqaret/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;It&amp;#39;s cool that they are going all in on formal methods. I&amp;#39;ve been using TLA+ and Lean to verify my own code recently and I agree that without LLMs, they weren&amp;#39;t worth the investment, but now that AIs are writing all the code, I think our jobs as engineers will be shipping formally verified code with the help of LLMs. I can see a world where an LLM writes some code, and the engineer&amp;#39;s task would be writing a proof of that code in order to ship it.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/based_goats&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/19sc6w0uf7u4g/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Any tips on where to get started with Lean/TLA+ without just spamming LLMs for instructions on how to get started?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 Is C++ depth still an advantage in the era of AI coding agents?</title>
+      <link>https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/</link>
+      <guid>t3_1xqz925</guid>
+      <pubDate>Sun, 08 Nov 2026 14:08:32 +0000</pubDate>
+      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/SadInfluence"&gt; /u/SadInfluence &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/SadInfluence&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/MendozaHolmes&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/19sbwb6ivutwi/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;yes, questions like these are the epitome of the dunning kruger effect&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/parvdave&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/19sc9lv313bhh/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Care to explain?&lt;br/&gt; Is it that you can feign expertise by hammering away AI generated code?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>🍿 Reddit: r/cscareerquestions</title>
+    <link>https://www.reddit.com/r/cscareerquestions/</link>
+    <description>Top 2 daily posts from r/cscareerquestions, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Sun, 08 Nov 2026 19:28:40 +0000</lastBuildDate>
+    <item>
+      <title>🍿 Amazon backing off AI exuberance</title>
+      <link>https://www.reddit.com/r/cscareerquestions/comments/1xqp4o9/amazon_backing_off_ai_exuberance/</link>
+      <guid>t3_1xqp4o9</guid>
+      <pubDate>Sun, 08 Nov 2026 03:53:15 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Amazon recently &lt;a href="https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html"&gt;released a memo&lt;/a&gt; in which they ask engineers to use thoughtfulness when using AI.&lt;/p&gt; &lt;p&gt;&amp;gt; Amazon also discouraged staffers from using AI when it doesn’t make sense for a given task.&lt;br/&gt; &amp;gt; “If your work does not benefit from current AI tooling, that is a finding, not a failing,” Amazon said in the memo.&lt;br/&gt; &amp;gt; The company added, “An engineer who can explain where AI does not yet help their work is demonstrating the judgement we are asking for.”&lt;/p&gt; &lt;p&gt;This is especially satisfying considering how obvious it was to anyone with a pulse how measuring token spend would backfire.&lt;/p&gt; &lt;p&gt;But this quote above gets to why AI mandates are absurd as a concept. It’s like telling a plumber they can only use a hammer when they come fix your sink. Imagine the arrogance you’d need to have to do this, and then realize this is the average tech exec.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/doubleohbond"&gt; /u/doubleohbond &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqp4o9/amazon_backing_off_ai_exuberance/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqp4o9/amazon_backing_off_ai_exuberance/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/doubleohbond&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/EntrepreneurHuge5008&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqp4o9/amazon_backing_off_ai_exuberance/19sb464iz1b6p/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Guess that initial excitement management got with AI is starting to wear off. Wonder how long before other companies follow and drop the heavy emphasis on it.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/TyphonExpanse&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqp4o9/amazon_backing_off_ai_exuberance/19sblnw3yo4bm/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Well, a big company did it and tech management are lemmings so probably lunchtime tomorrow&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 Am I just unemployable now?</title>
+      <link>https://www.reddit.com/r/cscareerquestions/comments/1xqs09q/am_i_just_unemployable_now/</link>
+      <guid>t3_1xqs09q</guid>
+      <pubDate>Sun, 08 Nov 2026 06:43:33 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;About 7 months ago my whole team got laid off from the startup I helped build from the ground up. we barely used any AI coding tools at the time. I had a baby shortly after and so wasn’t really looking for work or following changes to the industry until last month.&lt;/p&gt; &lt;p&gt;Now I’m finding it impossible to find a new job. Every listing wants you to have extensive experience with agentic coding in a commercial environment.&lt;/p&gt; &lt;p&gt;I haven’t been able to get a single real interview since June. I’ve had a couple of technical screens but just been ghosted on both. I get auto-rejection emails or ghosted from every role I apply for.&lt;/p&gt; &lt;p&gt;Is anyone still hiring people like me, with extensive experience (9+ years) in traditional software engineering, but who haven’t had the chance to use AI tools at work yet? Is it even possible for me to find a job now? Do I need to just lie on my resume and pretend to be an AI expert, then try to fake it through the interviews?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Fulham-Enjoyer"&gt; /u/Fulham-Enjoyer &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqs09q/am_i_just_unemployable_now/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqs09q/am_i_just_unemployable_now/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Fulham-Enjoyer&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/jcdc-flo&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqs09q/am_i_just_unemployable_now/19sbdh95vn8ec/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Scratch around and you&amp;#39;ll find everyone is peacocking and most people don&amp;#39;t even know what agentic coding means.&lt;/p&gt; &lt;p&gt;Industry has invented a bunch of new terms, just need to map them back to the old concepts and you&amp;#39;ll be able to bullshit with the best of them.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/mainframe_maisie&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xqs09q/am_i_just_unemployable_now/19sbqz044cyf5/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;any old patter about “loops”, “context management”, “guardrails” and you’re probably good lol&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+  </channel>
+</rss>
