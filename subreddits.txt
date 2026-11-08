@@ -1,3 +1,11 @@
 # Add one subreddit per line. You can use `vending`, `r/vending`, or a URL.
 vending
 overemployed
+rss
+ArcBrowser
+Googlevoice
+levels_fyi
+Shanghai
+AskReddit
+cscareerquestions
+quant
