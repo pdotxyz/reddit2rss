@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/quant</title>
     <link>https://www.reddit.com/r/quant/</link>
     <description>Top 2 daily posts from r/quant, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Sun, 08 Nov 2026 19:33:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 07:38:27 +0000</lastBuildDate>
     <item>
-      <title>🍿 Jane Street Blog - Our software engineering interviews are changing (a little)</title>
-      <link>https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/</link>
-      <guid>t3_1xqplkf</guid>
-      <pubDate>Sun, 08 Nov 2026 04:19:26 +0000</pubDate>
-      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/madredditscientist"&gt; /u/madredditscientist &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 What is really done so much better at tier 1 places than rest of us?</title>
+      <link>https://www.reddit.com/r/quant/comments/1xratpc/what_is_really_done_so_much_better_at_tier_1/</link>
+      <guid>t3_1xratpc</guid>
+      <pubDate>Sun, 08 Nov 2026 22:19:31 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I&amp;#39;m in mid-frequency equities in a tier 2-3 shop and I have now many years of experience in this with a book at tens of billions gmv. I think at this point deep down I&amp;#39;m convinced there is literally no way to get to a sharpe stably above 2 or something year after year. Even above 1 is hard if one tries to be factor neutral. It seems that the fundamental limit of the signal you can extract from publicly available dataset including those from the vendors, no matter how smart you are with the alpha extraction and risk management. Every time I see a sharpe of 2 or 3 or some kind of big jump in back test, I know there is a leakage problem or some flaws in the backtest and I would be correct 100% of the time. However, I keep hearing that at these legendary tier 1 places like citadel/JS/XTX/de shaw and you name what, you can get a sharpe of &amp;gt;2 easily and maybe even up to 5, 8 10 sharpe etc which means you would literally never see a drawdown even you keep running for hundreds of years. I can buy that if you run a tiny book with some HFT strategy. But at the scale of tens or hundreds of billions of dollars these companies invest/manage, how is it even possible they get a sharpe that high using only the public information? What am I fundamentally missing here? &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Alternative-Gain335"&gt; /u/Alternative-Gain335 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xratpc/what_is_really_done_so_much_better_at_tier_1/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xratpc/what_is_really_done_so_much_better_at_tier_1/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/madredditscientist&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Alternative-Gain335&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,26 +25,26 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Lopatron&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/19sc3gymqaret/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;It&amp;#39;s cool that they are going all in on formal methods. I&amp;#39;ve been using TLA+ and Lean to verify my own code recently and I agree that without LLMs, they weren&amp;#39;t worth the investment, but now that AIs are writing all the code, I think our jobs as engineers will be shipping formally verified code with the help of LLMs. I can see a world where an LLM writes some code, and the engineer&amp;#39;s task would be writing a proof of that code in order to ship it.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/throwaway613514&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xratpc/what_is_really_done_so_much_better_at_tier_1/19scjrfr1srpg/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;You actually mentioned the two most important answers to your question in the question itself!&lt;/p&gt; &lt;ul&gt; &lt;li&gt;If you&amp;#39;re working at a prop shop (JS, XTX, I also include Citadel to a certain extent), you have MUCH more flexibility with factor neutrality requirements as compared to pods at pod shops. You often even have flexibility with things like VaR, market neutrality requirements, etc. This obviously makes things way easier - you&amp;#39;re allowed to take advantage of naive signals that would be banned in pod shops (e.g., momentum signals, factor timing, etc.).&lt;/li&gt; &lt;li&gt;If your firm also engages in market making/anything related to HFT, and especially if they are a significant market maker, then running a MFT book becomes almost trivially easy, since you have real-time depth-of-book flow knowledge. Even if they&amp;#39;re not market making, having an HFT under your roof makes execution way simpler &amp;amp; more reliable.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;There are some MFT pods I know at Millenium/Point72/BAM that just have a cracked PM with some super secret 10-Sharpe vendor dataset, but most of the PMs at these shops seem to echo your general sentiment - work is a constant struggle, and even pulling off &amp;gt;1 Sharpe is really challenging.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/based_goats&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqplkf/jane_street_blog_our_software_engineering/19sc6w0uf7u4g/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Any tips on where to get started with Lean/TLA+ without just spamming LLMs for instructions on how to get started?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/Available_Lake5919&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xratpc/what_is_really_done_so_much_better_at_tier_1/19sd4etz110zp/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Idc who u are but if u claim to have 10 sharpe in mft either ur lying or insider trading or something &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
-      <title>🍿 Is C++ depth still an advantage in the era of AI coding agents?</title>
-      <link>https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/</link>
-      <guid>t3_1xqz925</guid>
-      <pubDate>Sun, 08 Nov 2026 14:08:32 +0000</pubDate>
-      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/SadInfluence"&gt; /u/SadInfluence &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Citadel securities research engineer offer: what's the max you can negotiate up to?</title>
+      <link>https://www.reddit.com/r/quant/comments/1xrazur/citadel_securities_research_engineer_offer_whats/</link>
+      <guid>t3_1xrazur</guid>
+      <pubDate>Sun, 08 Nov 2026 22:27:09 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I don’t want to reveal exact numbers but what’s essentially the max I can ask for or negotiate up to?&lt;/p&gt; &lt;p&gt;I’m interviewing for other trading firms and also Scale AI, Google, Microsoft AI, etc. I&amp;#39;m in the final stage for some of these and have offers from some of these ranging from 400-740k total comp. &lt;/p&gt; &lt;p&gt;9 YOE&lt;/p&gt; &lt;p&gt;This is for a trading team (non market making) where I’ll be the only dev and the rest are QRs. It’s obviously not a research role but not a traditional SWE “tech” role either according to them, and is kind of a “hybrid” I guess.&lt;/p&gt; &lt;p&gt;For further context, at MAI, the recruiter told me i could expect 800k-1.4M total comp depending on how well my final interviews go. That one is a principal engineer role&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/nebula79283"&gt; /u/nebula79283 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xrazur/citadel_securities_research_engineer_offer_whats/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xrazur/citadel_securities_research_engineer_offer_whats/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/SadInfluence&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/nebula79283&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -55,14 +55,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/MendozaHolmes&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/19sbwb6ivutwi/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;yes, questions like these are the epitome of the dunning kruger effect&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/Ok-Cat-9189&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xrazur/citadel_securities_research_engineer_offer_whats/19scmth2pe5vl/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;it’s well known citsec can pay whatever they&lt;br/&gt; need to get you (if they want). the question which determines comp is how badly they&lt;br/&gt; want you. and no one knows enough specifics to answer that question for you.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/parvdave&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xqz925/is_c_depth_still_an_advantage_in_the_era_of_ai/19sc9lv313bhh/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Care to explain?&lt;br/&gt; Is it that you can feign expertise by hammering away AI generated code?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/New-Professional-330&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xrazur/citadel_securities_research_engineer_offer_whats/19sckdjx3gric/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I feel like 1m reoccurring for a decade worth of experience is a reasonable benchmark? Like for a research ish related role and especially at a top firm? I&amp;#39;m definitely not experienced though so please take this with a massive grain of salt. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
