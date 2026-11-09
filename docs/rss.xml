@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
     <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Mon, 09 Nov 2026 07:12:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 19:12:18 +0000</lastBuildDate>
     <item>
-      <title>🍿 Feedler 1.9.1 gets a brand new dedicated layout for YouTube feeds</title>
-      <link>https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/</link>
-      <guid>t3_1xqujcy</guid>
-      <pubDate>Sun, 08 Nov 2026 09:30:16 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;If you follow YouTube channels via RSS, the new 1.9.1 update of Feedler should interest you because it offers a brand new dedicated layout as well as new features:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;The embed player is now smoother and show first the thumbnail and turns into the player as soon as the player is ready&lt;/li&gt; &lt;li&gt;The length of the video is extracted and displayed&lt;/li&gt; &lt;li&gt;When the video has chapters, they are extracted and shown as a timeline under the video with the title and the length of each chapter. You can tap a chapter to go to directly to the selected one and the timeline always shows the current one. &lt;/li&gt; &lt;li&gt;Links are extracted from the description to be moved in a dedicated Links section&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Regarding the layout itself it is difficult to explain without pictures so you will therefore see an overview on this dedicated post: &lt;a href="https://feedlerapp.com/blog/youtube-layout.html"&gt;https://feedlerapp.com/blog/youtube-layout.html&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/FeedlerApp"&gt; /u/FeedlerApp &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Reddit is removing free RSS and API access – Are there alternatives?</title>
+      <link>https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/</link>
+      <guid>t3_1xrojen</guid>
+      <pubDate>Mon, 09 Nov 2026 10:44:12 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Reddit is making RSS and API access paid. Are there already any libraries, self-hosted tools, or apps that can work around this?&lt;/p&gt; &lt;p&gt;Looking for alternatives to keep accessing Reddit content without a paid API.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Frequent-Crow7621"&gt; /u/Frequent-Crow7621 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/FeedlerApp&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Frequent-Crow7621&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,35 +25,45 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/ForeignAd6708&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/19sbul6j0dk79/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Android linux ? Please. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/Odd-Anteater875&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/19sdeu1xqijgi/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;They don’t want you do access the content - it’s very valuable these days. And they will go to great lengths to protect it, because some of the more rogue AI companies will do everything they can to get all that training data. &lt;/p&gt; &lt;p&gt;In other words, do not expect to be able to get free access. Maybe someone will find a workaround, but it will be temporary. The only way out is out of Reddit (and all other commercial social media sites).&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/420vegan420&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xqujcy/feedler_191_gets_a_brand_new_dedicated_layout_for/19sc6b10va16q/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Best RSS app&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/Maxence33&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/19sdktsi5c1s0/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;They try to have AI companies pay for the content, and try to prevent any form of leakage. But I don&amp;#39;t think this is a good idea. Reddit is made by users who provide their content for free ... &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
-      <title>🍿 Blueit demo is live!</title>
-      <link>https://www.reddit.com/r/rss/comments/1xriupx/blueit_demo_is_live/</link>
-      <guid>t3_1xriupx</guid>
-      <pubDate>Mon, 09 Nov 2026 04:57:50 +0000</pubDate>
-      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Mojeaux18"&gt; /u/Mojeaux18 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="/r/BlueitNews/comments/1xris3b/blueit_demo_is_live/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xriupx/blueit_demo_is_live/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 RSS feed generator recommendation</title>
+      <link>https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/</link>
+      <guid>t3_1xrvv9y</guid>
+      <pubDate>Mon, 09 Nov 2026 16:15:20 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;hello, i&amp;#39;m new to this&lt;br/&gt; i want to find a good RSS feed generator(s), i&amp;#39;ve been exploring this subreddit and there are a lot of recommendations. &lt;/p&gt; &lt;p&gt;i am looking for the simplest, minimal tool stack to get RSS feed links for:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;strong&gt;Reddit&lt;/strong&gt; (keyword tracking with Boolean queries)&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Instagram&lt;/strong&gt; (user profiles / hashtags)&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Facebook&lt;/strong&gt; (public pages / groups)&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Email newsletters&lt;/strong&gt; (incoming email converted to an RSS link)&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;i do not need full article scraping—just a link and notification when a new post goes live so I can open it in an external app.&lt;/p&gt; &lt;p&gt;which generators or bridges are working reliably right now without constant breakages?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Sea_Muffin_7217"&gt; /u/Sea_Muffin_7217 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Mojeaux18&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Sea_Muffin_7217&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/Odd-Anteater875&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/19sdvqfpqx9j8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What you&amp;#39;re looking for is, by definition, extremely fragile (except the email gateway, which can work). These sites do not want any open APIs and will fight them. So a gateway can work for a while, but it won&amp;#39;t be reliable, especially as it gets more popular.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/RSSFlux&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/19sdy7y7hg29s/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;No single generator covers those four right now. The breakage is concentrated in Instagram/Facebook; the Reddit and email legs are stable. Here&amp;#39;s the stack I&amp;#39;d use:&lt;/p&gt; &lt;p&gt;Reddit (Boolean keyword tracking) — Reddit&amp;#39;s own search RSS. Build the search in the UI first, then swap the URL: &lt;a href="https://www.reddit.com/search.rss?q=YOUR+QUERY&amp;amp;sort=new&amp;amp;t=week"&gt;https://www.reddit.com/search.rss?q=YOUR+QUERY&amp;amp;sort=new&amp;amp;t=week&lt;/a&gt;. For a single subreddit use /r/&amp;lt;sub&amp;gt;/search.rss?q=...&amp;amp;restrict_sr=on. Reddit&amp;#39;s operators (quotes, AND/OR/NOT) carry over — verify the query in the UI first. Anonymous RSS is rate-limited, so poll every 15–30 min; bursts get 403s. If you&amp;#39;d rather get email alerts than run a reader, F5Bot is the low-effort option for keyword/phrase alerts.&lt;/p&gt; &lt;p&gt;Instagram — no official feed. The two that still work are &lt;a href="http://RSS.app"&gt;RSS.app&lt;/a&gt; (paid; profiles and hashtags) and a self-hosted RSSHub with a logged-in cookie. Both break when Instagram changes; there&amp;#39;s no free reliable option right now. Budget for maintenance.&lt;/p&gt; &lt;p&gt;Facebook — public pages: &lt;a href="http://RSS.app"&gt;RSS.app&lt;/a&gt; or RSSHub, usually with cookies; expect occasional breakage. Groups: I haven&amp;#39;t found a reliable bridge — Graph API needs app review plus group access, and the scraping routes are fragile. Treat groups as manual/notifications only.&lt;/p&gt; &lt;p&gt;Email newsletters — Kill the Newsletter! (kill-the-newsletter.com). Free: it gives you an address, you subscribe the newsletter to it, and it exposes an Atom feed. If it&amp;#39;s Substack, just use its native /feed.&lt;/p&gt; &lt;p&gt;Reader/notifications — Inoreader, Feedly, or NetNewsWire; for push, ntfy or the reader&amp;#39;s app. That&amp;#39;s the &amp;quot;link + notification&amp;quot; part.&lt;/p&gt; &lt;p&gt;Disclosure: I run RSSFlux, which covers the Reddit leg and the delivery leg — it hosts the Reddit search feed, refreshes it on a schedule, and pushes new items to Discord/Telegram/email/webhook/API. It doesn&amp;#39;t ingest Instagram, Facebook groups, or newsletter email, so it isn&amp;#39;t a one-tool answer for your list.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
 </rss>
