@@ -4,7 +4,7 @@
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
     <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Mon, 09 Nov 2026 19:12:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 07:12:20 +0000</lastBuildDate>
     <item>
       <title>🍿 Reddit is removing free RSS and API access – Are there alternatives?</title>
       <link>https://www.reddit.com/r/rss/comments/1xrojen/reddit_is_removing_free_rss_and_api_access_are/</link>
@@ -55,14 +55,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Odd-Anteater875&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/19sdvqfpqx9j8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What you&amp;#39;re looking for is, by definition, extremely fragile (except the email gateway, which can work). These sites do not want any open APIs and will fight them. So a gateway can work for a while, but it won&amp;#39;t be reliable, especially as it gets more popular.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/RSSFlux&lt;/h4&gt;
+          &lt;h4&gt;Reply 1 — /u/RSSFlux&lt;/h4&gt;
           &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/19sdy7y7hg29s/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
           &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;No single generator covers those four right now. The breakage is concentrated in Instagram/Facebook; the Reddit and email legs are stable. Here&amp;#39;s the stack I&amp;#39;d use:&lt;/p&gt; &lt;p&gt;Reddit (Boolean keyword tracking) — Reddit&amp;#39;s own search RSS. Build the search in the UI first, then swap the URL: &lt;a href="https://www.reddit.com/search.rss?q=YOUR+QUERY&amp;amp;sort=new&amp;amp;t=week"&gt;https://www.reddit.com/search.rss?q=YOUR+QUERY&amp;amp;sort=new&amp;amp;t=week&lt;/a&gt;. For a single subreddit use /r/&amp;lt;sub&amp;gt;/search.rss?q=...&amp;amp;restrict_sr=on. Reddit&amp;#39;s operators (quotes, AND/OR/NOT) carry over — verify the query in the UI first. Anonymous RSS is rate-limited, so poll every 15–30 min; bursts get 403s. If you&amp;#39;d rather get email alerts than run a reader, F5Bot is the low-effort option for keyword/phrase alerts.&lt;/p&gt; &lt;p&gt;Instagram — no official feed. The two that still work are &lt;a href="http://RSS.app"&gt;RSS.app&lt;/a&gt; (paid; profiles and hashtags) and a self-hosted RSSHub with a logged-in cookie. Both break when Instagram changes; there&amp;#39;s no free reliable option right now. Budget for maintenance.&lt;/p&gt; &lt;p&gt;Facebook — public pages: &lt;a href="http://RSS.app"&gt;RSS.app&lt;/a&gt; or RSSHub, usually with cookies; expect occasional breakage. Groups: I haven&amp;#39;t found a reliable bridge — Graph API needs app review plus group access, and the scraping routes are fragile. Treat groups as manual/notifications only.&lt;/p&gt; &lt;p&gt;Email newsletters — Kill the Newsletter! (kill-the-newsletter.com). Free: it gives you an address, you subscribe the newsletter to it, and it exposes an Atom feed. If it&amp;#39;s Substack, just use its native /feed.&lt;/p&gt; &lt;p&gt;Reader/notifications — Inoreader, Feedly, or NetNewsWire; for push, ntfy or the reader&amp;#39;s app. That&amp;#39;s the &amp;quot;link + notification&amp;quot; part.&lt;/p&gt; &lt;p&gt;Disclosure: I run RSSFlux, which covers the Reddit leg and the delivery leg — it hosts the Reddit search feed, refreshes it on a schedule, and pushes new items to Discord/Telegram/email/webhook/API. It doesn&amp;#39;t ingest Instagram, Facebook groups, or newsletter email, so it isn&amp;#39;t a one-tool answer for your list.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/Odd-Anteater875&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xrvv9y/rss_feed_generator_recommendation/19sdvqfpqx9j8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What you&amp;#39;re looking for is, by definition, extremely fragile (except the email gateway, which can work). These sites do not want any open APIs and will fight them. So a gateway can work for a while, but it won&amp;#39;t be reliable, especially as it gets more popular.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
