@@ -1,40 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
     <title>🍿 Reddit: r/levels_fyi</title>
     <link>https://www.reddit.com/r/levels_fyi/</link>
     <description>Top 2 daily posts from r/levels_fyi, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Tue, 10 Nov 2026 07:23:12 +0000</lastBuildDate>
-    <item>
-      <title>🍿 Got the following offer from Walmart for a Staff Software Engineer</title>
-      <link>https://www.reddit.com/r/levels_fyi/comments/1xrs776/got_the_following_offer_from_walmart_for_a_staff/</link>
-      <guid>t3_1xrs776</guid>
-      <pubDate>Mon, 09 Nov 2026 13:52:53 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Base including employer PF - 70 lakh&lt;br/&gt; Bonus ~ 17 lakh&lt;br/&gt; RSU - 30 lakh for 3 years to be granted in April 2027&lt;br/&gt; Joining Bonus - 6.5 L&lt;/p&gt; &lt;p&gt;Am i being lowballed here? Does walmart give any New Hire RSUs as well&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Acrobatic_Summer_927"&gt; /u/Acrobatic_Summer_927 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xrs776/got_the_following_offer_from_walmart_for_a_staff/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xrs776/got_the_following_offer_from_walmart_for_a_staff/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
-    &lt;div class="post-stats"&gt;
-      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Acrobatic_Summer_927&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/AutoModerator&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xrs776/got_the_following_offer_from_walmart_for_a_staff/19sdmzlit4hi9/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Thanks for sharing your offer &lt;a href="/u/Acrobatic_Summer_927"&gt;u/Acrobatic_Summer_927&lt;/a&gt;! If you haven’t already, &lt;a href="https://www.levels.fyi/salaries/add"&gt;consider adding your comp from your new offer to Levels.fyi&lt;/a&gt;! It&amp;#39;s quick and it helps keep this whole thing running! View more salaries and offer data on &lt;a href="https://www.levels.fyi"&gt;Levels.fyi →&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;em&gt;I am a bot, and this action was performed automatically. Please &lt;a href="/message/compose/?to=/r/levels_fyi"&gt;contact the moderators of this subreddit&lt;/a&gt; if you have any questions or concerns.&lt;/em&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/plmojnihb-qaz&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xrs776/got_the_following_offer_from_walmart_for_a_staff/19sdnmjcedtwk/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;YoE and current TC?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
-    </item>
+    <lastBuildDate>Tue, 10 Nov 2026 19:21:00 +0000</lastBuildDate>
     <item>
       <title>🍿 Comp question</title>
       <link>https://www.reddit.com/r/levels_fyi/comments/1xsb0kf/comp_question/</link>
@@ -64,6 +34,27 @@
           &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xsb0kf/comp_question/19sep1sbcuqww/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
           &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;As long as they pay well I have no issues with that in all honesty &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 chrome extension for showing "liquid tc"</title>
+      <link>https://www.reddit.com/r/levels_fyi/comments/1xsonle/chrome_extension_for_showing_liquid_tc/</link>
+      <guid>t3_1xsonle</guid>
+      <pubDate>Tue, 10 Nov 2026 14:43:33 +0000</pubDate>
+      <content:encoded>&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xsonle/chrome_extension_for_showing_liquid_tc/"&gt; &lt;img src="https://external-preview.redd.it/NzdkdnF1N3ZyczBpMYYcmog9eCjMCmjIMGkRLo41XGqeBkW9poSbDFJYVdQ9.png?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=d0a4e9a646ba0b69ddc0e45c44090338f248f9ce" alt="chrome extension for showing &amp;quot;liquid tc&amp;quot;" title="chrome extension for showing &amp;quot;liquid tc&amp;quot;" /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;As I was lurking around &lt;a href="http://levels.fyi"&gt;levels.fyi&lt;/a&gt; and also inspired by &lt;a href="http://taxes.fyi"&gt;taxes.fyi&lt;/a&gt;, I wanted to identify the total liquid TC a company offered if it were private as it&amp;#39;s technically not liquid until the company IPOs, gets bought, or the company offers an employee tender. Hence, made this for that reason.&lt;/p&gt; &lt;p&gt;This extension replaces the TC column with liquid TC:&lt;/p&gt; &lt;p&gt;- Public companies: stock counts in full&lt;/p&gt; &lt;p&gt;- Private companies: stock counts at whatever % you set on a slider (default 0%)&lt;/p&gt; &lt;p&gt;- Companies with past employee tender offers (OpenAI, Stripe, etc.) are also listed, with sources attached&lt;/p&gt; &lt;p&gt;Hopefully this is helpful for some people and here&amp;#39;s the link to the github code if anyone wants to try it out.&lt;/p&gt; &lt;p&gt;&lt;a href="https://github.com/Steven20210/levels-liquid-tc"&gt;https://github.com/Steven20210/levels-liquid-tc&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Open to suggestions and feedback!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Alternative-Bug4600"&gt; /u/Alternative-Bug4600 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://v.redd.it/hurxsb7vrs0i1"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xsonle/chrome_extension_for_showing_liquid_tc/"&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;img src="https://external-preview.redd.it/NzdkdnF1N3ZyczBpMYYcmog9eCjMCmjIMGkRLo41XGqeBkW9poSbDFJYVdQ9.png?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=d0a4e9a646ba0b69ddc0e45c44090338f248f9ce" alt="Reddit post image" /&gt;&lt;/p&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Alternative-Bug4600&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
+      <media:content url="https://external-preview.redd.it/NzdkdnF1N3ZyczBpMYYcmog9eCjMCmjIMGkRLo41XGqeBkW9poSbDFJYVdQ9.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d0a4e9a646ba0b69ddc0e45c44090338f248f9ce" medium="image" />
     </item>
   </channel>
 </rss>
