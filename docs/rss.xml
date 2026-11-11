@@ -3,31 +3,66 @@
   <channel>
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
-    <description>Top 1 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Tue, 10 Nov 2026 19:10:08 +0000</lastBuildDate>
+    <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Wed, 11 Nov 2026 07:12:20 +0000</lastBuildDate>
     <item>
-      <title>🍿 Flit - RSS reader &amp; News feed got a huge update!</title>
-      <link>https://www.reddit.com/r/rss/comments/1xsmut4/flit_rss_reader_news_feed_got_a_huge_update/</link>
-      <guid>t3_1xsmut4</guid>
-      <pubDate>Tue, 10 Nov 2026 13:26:32 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hi there! I am a the creator of Flit, the RSS reader &lt;/p&gt; &lt;p&gt;I created Flit to build something different from the classic rss and news reader. The main thing about Flit is the inbox! There are mainly 2 ways to easily clean your inbox: Cards or Feed. &lt;/p&gt; &lt;p&gt;In cards, you can swipe left and right to decide whether to discard or save the article for later; in feed, you scroll like a reel app (Instagram, TikTok, Shorts, etc.) and still swipe left and right to save for later or discard. In both cases, you can tap to open. &lt;/p&gt; &lt;p&gt;But Flit is not just this, Flit is: &lt;/p&gt; &lt;ul&gt; &lt;li&gt;YouTube channels and podcasts&lt;/li&gt; &lt;li&gt;Bluesky and Mastodon posts&lt;/li&gt; &lt;li&gt;Discover: top stories by country&lt;/li&gt; &lt;li&gt;Siri AI summaries&lt;/li&gt; &lt;li&gt;Translation&lt;/li&gt; &lt;li&gt;Offline Reading&lt;/li&gt; &lt;li&gt;Notes on articles&lt;/li&gt; &lt;li&gt;Share as image&lt;/li&gt; &lt;li&gt;Snooze a source&lt;/li&gt; &lt;li&gt;Blocked Words&lt;/li&gt; &lt;li&gt;Daily Digest&lt;/li&gt; &lt;li&gt;Insights&lt;/li&gt; &lt;li&gt;Mark as Read on Scroll&lt;/li&gt; &lt;li&gt;Apple Watch&lt;/li&gt; &lt;li&gt;iPhone Duo support&lt;/li&gt; &lt;li&gt;Accessible reading fonts&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Thank you and I really hope you will like Flit! &lt;/p&gt; &lt;p&gt;&lt;a href="https://apps.apple.com/app/flit-easy-feed/id6821040165?ct=Launch+Event&amp;amp;pt=118978628"&gt;https://apps.apple.com/app/flit-easy-feed/id6821040165?ct=Launch+Event&amp;amp;pt=118978628&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/AmethystBJ"&gt; /u/AmethystBJ &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xsmut4/flit_rss_reader_news_feed_got_a_huge_update/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xsmut4/flit_rss_reader_news_feed_got_a_huge_update/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Find new RSS feeds with a directory of nearly 2,500 active feeds</title>
+      <link>https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/</link>
+      <guid>t3_1xswn7q</guid>
+      <pubDate>Tue, 10 Nov 2026 19:45:56 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I always struggle to find relevant, active feeds so I built a directory where each feed is regularly checked to make sure it&amp;#39;s still active.&lt;/p&gt; &lt;p&gt;A feed only stays if it&amp;#39;s posted in the last year, and about 1,400 have posted in the last month.&lt;/p&gt; &lt;p&gt;It&amp;#39;s only searchable via topics - no promoted posts, no search box. Every topic has its own OPML file, so you can import a whole topic into your reader in one go. &lt;/p&gt; &lt;p&gt;Feed pages show the last few posts, so you can see what you&amp;#39;re signing up for. &lt;/p&gt; &lt;p&gt;&lt;a href="https://subscribeto.mikestreety.co.uk/rss/"&gt;https://subscribeto.mikestreety.co.uk/rss/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;It&amp;#39;s a side project and would love to hear any feedback and I&amp;#39;m always looking for new feed recommendations.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/mikestreety"&gt; /u/mikestreety &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/AmethystBJ&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/mikestreety&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 1&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 1&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (1)&lt;/h3&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Clean_Deer_8566&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xsmut4/flit_rss_reader_news_feed_got_a_huge_update/19sfq88jqk4pw/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What is a good web based reader,I don&amp;#39;t use apple phone&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/Longjumping-Boot1886&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/19sfv3tf0yzy9/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Scale it. There is much-much more things in Internet:&lt;br/&gt; &lt;a href="https://infobubble.github.io/infobubble-support/catalog.html"&gt;https://infobubble.github.io/infobubble-support/catalog.html&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/mikestreety&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/19sfw9c3x6741/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Incredible resource - thanks!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 RSS Reader that holds links?</title>
+      <link>https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/</link>
+      <guid>t3_1xt2j95</guid>
+      <pubDate>Tue, 10 Nov 2026 23:46:51 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I&amp;#39;m looking for an RSS Reader that will hold onto links for basically as long as I want. Two months, six months, a year plus. Preferrably as long as I have the physical storage to hold the link. The last one I had timed out after a month or two and I didn&amp;#39;t see a way to turn that off. I dont care if it has to load the info for the website anew each time, I&amp;#39;m willing to wait forever for it so long as it can do that as a background process. &lt;/p&gt; &lt;p&gt;&lt;strong&gt;Requirements: ANDROID, NO AI SUMMARIES, FREE OR CHEAP&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Benefits:&lt;/strong&gt; if it can pull over a thousaand links from a single RSS from months plus back (tbh I dont know if this is physically possible), if I can sustomize the colors and fonts&lt;/p&gt; &lt;p&gt;I&amp;#39;m using this mostly for ao3 (when it comes back) &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Comprehensive_Ad1072"&gt; /u/Comprehensive_Ad1072 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Comprehensive_Ad1072&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/terazik-mubaloo&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/19sg7jz40rutc/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;&amp;quot;Read You&amp;quot; is the one I use. It has colour and font customization and I&amp;#39;m fairly certain that it doesn&amp;#39;t delete old articles. Also it&amp;#39;s got a pretty minimal UI if that&amp;#39;s something you like!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/Comprehensive_Ad1072&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/19sg8bnebtuww/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I will certainly look into this one, tho I will also test other suggestions thrown at me. Thank you! &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>

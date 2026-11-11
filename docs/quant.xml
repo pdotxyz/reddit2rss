@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/quant</title>
     <link>https://www.reddit.com/r/quant/</link>
     <description>Top 2 daily posts from r/quant, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Tue, 10 Nov 2026 19:38:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 07:39:34 +0000</lastBuildDate>
     <item>
-      <title>🍿 How much of AI code for research do you verify at work | Quant Research</title>
-      <link>https://www.reddit.com/r/quant/comments/1xs54o9/how_much_of_ai_code_for_research_do_you_verify_at/</link>
-      <guid>t3_1xs54o9</guid>
-      <pubDate>Mon, 09 Nov 2026 21:59:41 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;So I’m currently working as a Quant Researcher with a trading desk at a bank and a lot of research/data analysis code at my desk is written by Claude and the team kind of doesn’t focus a lot on line by line code verification seriously (apart from some rudimentary sanity checks). I worked as an SWE before transitioning to quant and the focus on code review even for subtle changes was immense previously. Is it true that with the advent of AI, the code written for data analysis/research is just assumed to be correct given it passes certain sanity checks ?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Substantial_Stay4214"&gt; /u/Substantial_Stay4214 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xs54o9/how_much_of_ai_code_for_research_do_you_verify_at/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xs54o9/how_much_of_ai_code_for_research_do_you_verify_at/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Point72 sues quant analyst for stealing code</title>
+      <link>https://www.reddit.com/r/quant/comments/1xt2i5v/point72_sues_quant_analyst_for_stealing_code/</link>
+      <guid>t3_1xt2i5v</guid>
+      <pubDate>Tue, 10 Nov 2026 23:45:25 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Easier now than ever to use an ai to target and steal code. Be careful what you’re putting in your Claude prompts lol&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/igetlotsofupvotes"&gt; /u/igetlotsofupvotes &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.bloomberg.com/news/articles/2026-11-10/point72-claims-fired-quant-analyst-used-ai-tools-to-steal-code"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xt2i5v/point72_sues_quant_analyst_for_stealing_code/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Substantial_Stay4214&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/igetlotsofupvotes&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,14 +25,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/NatGaz&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xs54o9/how_much_of_ai_code_for_research_do_you_verify_at/19se9h78qwemb/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Frankly the only sanity check you have to enforce is “you must not do any look ahead” , repeat that 4 or 5 times in the context file and Claude will implement the stuff while preventing any look ahead bias. If not sure, it’s good to specify that in the context file another half-dozen of times.&lt;/p&gt; &lt;p&gt;Regarding the code quality, although I agree that critical systems must be reviews by humans, for analysis for which you do df.groupby or df.loc , is it really that important ? Once your analysis is done you can get the few scripts that are valuable amongst the analysis_7_final_really_final.py and ask Claude to remove their over engineered features and comments to make it actually readable . &lt;/p&gt; &lt;p&gt;Claude has this nasty habit of putting extremely long comments in pretty much useless methods and five lines after you see it doing some magical stuff that seasoned soft dev wouldn’t dare try and with no comments .&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/ForeverFar1297&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xt2i5v/point72_sues_quant_analyst_for_stealing_code/19sg8f1dccb44/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Found a Japanese article: &lt;/p&gt; &lt;p&gt;&lt;a href="https://newsdig.tbs.co.jp/articles/withbloomberg/3076313?display=1"&gt;https://newsdig.tbs.co.jp/articles/withbloomberg/3076313?display=1&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&amp;quot;Jin, who joined the company in 2019, allegedly used AI tools available at work to examine Cubist&amp;#39;s proprietary research and source code, and then transferred it to his personal device&amp;quot;&lt;/p&gt; &lt;p&gt;Bro is apparently retarded.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/jeffjeffjeffw&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xs54o9/how_much_of_ai_code_for_research_do_you_verify_at/19sew9ga2hb0k/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I think having evals / test cases helps guard against common errors (same with &amp;#39;human&amp;#39; implementations)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/meltbox&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xt2i5v/point72_sues_quant_analyst_for_stealing_code/19sg8y7r9am2q/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;It turns out a lot of smart people are pretty dumb for how smart they are.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
@@ -48,12 +48,22 @@
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/Old-Sandwich-690&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xsq2tq/mmhf_central_execution_trajectory/19sg5ht852jvp/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;It really depends on what group within the central book team you will enter.&lt;/p&gt; &lt;p&gt;If you are involved in the monetisation part you will work on signal combination, portfolio optimization etc. This might involve tons of ml (bagging, trees) or more traditional constrained optimisation techniques. In this role effectively each pm is a signal and your goal is to net all the pm signals per market and execute. You might also be involved in pnl attribution. Another adjacent function is central risk book replication. In this role your goal is to try to replicate winning trades from successful pms and trade them using the firm’s much higher aum. This is a very challenging topic as in theory you execute with a lag and you might need to systematically trade discretionary signals which believe me it’s not trivial. &lt;/p&gt; &lt;p&gt;In terms of career progression it can be either amazing or stale. If you work on pc and execution with deep understanding of tc and market impact becoming a pm in another pod or prop it is very much feasible assuming you learn how to build alpha. In contrast people who work exclusively on alpha do not usually have an understanding of how their signals are actually monetised and thus cannot transition easily to risk taking positions. If you don’t know the strategy’s capacity how it is actually executed and what other assumptions hold quoting a Sharpe 3 (even realised) is meaningless.&lt;/p&gt; &lt;p&gt;However the position can be stale if you work mostly on operational stuff and tc analysis. In that case you are stuck.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/I_seddit&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xsq2tq/mmhf_central_execution_trajectory/19sg0blugnlsy/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Used to work as an execution quant on the sell side for a while and have since moved to a prop shop. Several of my former colleagues have made the transition from execution to alpha generating quant positions in funds and prop shops. &lt;/p&gt; &lt;p&gt;If you are interested in moving to these kind of roles, IMO, what&amp;#39;s important is developing a solid understanding of market structure &amp;amp; micro structure, execution algos, market impact etc. If you get stuck with just the surface level TCA work, it will be hard to translate those skills to the alpha research roles. &lt;/p&gt; &lt;p&gt;That said, if you prefer a relatively relaxed job with greater stability, albeit with a lower compensation ceiling, staying on the execution side can also be a good career choice.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
 </rss>
