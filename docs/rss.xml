@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
     <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 19:12:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 07:12:19 +0000</lastBuildDate>
     <item>
-      <title>🍿 Find new RSS feeds with a directory of nearly 2,500 active feeds</title>
-      <link>https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/</link>
-      <guid>t3_1xswn7q</guid>
-      <pubDate>Tue, 10 Nov 2026 19:45:56 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I always struggle to find relevant, active feeds so I built a directory where each feed is regularly checked to make sure it&amp;#39;s still active.&lt;/p&gt; &lt;p&gt;A feed only stays if it&amp;#39;s posted in the last year, and about 1,400 have posted in the last month.&lt;/p&gt; &lt;p&gt;It&amp;#39;s only searchable via topics - no promoted posts, no search box. Every topic has its own OPML file, so you can import a whole topic into your reader in one go. &lt;/p&gt; &lt;p&gt;Feed pages show the last few posts, so you can see what you&amp;#39;re signing up for. &lt;/p&gt; &lt;p&gt;&lt;a href="https://subscribeto.mikestreety.co.uk/rss/"&gt;https://subscribeto.mikestreety.co.uk/rss/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;It&amp;#39;s a side project and would love to hear any feedback and I&amp;#39;m always looking for new feed recommendations.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/mikestreety"&gt; /u/mikestreety &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Biblio Times: RSS newspaper &amp; magazine (local, no account, one-time)</title>
+      <link>https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/</link>
+      <guid>t3_1xts4pr</guid>
+      <pubDate>Wed, 11 Nov 2026 20:05:44 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hi &lt;a href="/r/rss"&gt;r/rss&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I’ve been working on a different kind of RSS reader called Biblio Times. Instead of a river of posts or a list of headlines, it takes the feeds you choose and lays them out each morning as a newspaper (or, if you prefer, a magazine).&lt;/p&gt; &lt;p&gt;A few things that mattered to me while building it:&lt;/p&gt; &lt;p&gt;• Your device is the press. It fetches the public RSS/Atom feeds itself. Nothing goes through our servers, there’s no account, and we never see what you read.&lt;/p&gt; &lt;p&gt;• It looks and feels like paper: front page, sections, columns, proper serif type (or a tight grotesk), and photos screened as halftones (or in colour). On iPhone it arrives folded; on iPad and Mac it opens as a spread. There’s also a Dystopian edition on grey pulp with typewriter text if you want that vibe.&lt;/p&gt; &lt;p&gt;• You can use starter lists for a bunch of countries (or Ideas / Dispatches / Design desks), or just paste any site/feed URL. Custom sections, topics to follow, words to leave out, clippings, back issues for a fortnight, widgets, etc.&lt;/p&gt; &lt;p&gt;• Pricing is one-time (Press Pass ~$20 for your paper + one magazine across your devices; optional higher tier for more papers + Family Sharing). First three mornings are free. No subscription.&lt;/p&gt; &lt;p&gt;It’s on the App Store for iPhone, iPad, and Mac (iOS 18+ / macOS 15+). One purchase covers them all.&lt;/p&gt; &lt;p&gt;I’m the developer (same person as the Biblio.ink bookshelf app). Happy to answer questions about how it handles feeds, layout, offline behaviour, or anything else. Feedback is very welcome, especially from people who live in their readers.&lt;/p&gt; &lt;p&gt;Links:&lt;br/&gt; &lt;a href="https://biblio.ink/times"&gt;https://biblio.ink/times&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="https://apps.apple.com/app/biblio-times-rss-newspaper/id6820293984"&gt;https://apps.apple.com/app/biblio-times-rss-newspaper/id6820293984&lt;/a&gt;&lt;/p&gt; &lt;p&gt;(Also, with Reddit’s own RSS feeds ending tomorrow, I’ve been thinking a lot about how people still want to pull content into a calmer, offline-friendly format. This was my attempt at that.)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/FriendlyGarlic1331"&gt; /u/FriendlyGarlic1331 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/mikestreety&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/FriendlyGarlic1331&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,26 +25,26 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Longjumping-Boot1886&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/19sfv3tf0yzy9/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Scale it. There is much-much more things in Internet:&lt;br/&gt; &lt;a href="https://infobubble.github.io/infobubble-support/catalog.html"&gt;https://infobubble.github.io/infobubble-support/catalog.html&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/Clean_Deer_8566&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/19shprd2lp7s3/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Need one web based,please&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/mikestreety&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xswn7q/find_new_rss_feeds_with_a_directory_of_nearly/19sfw9c3x6741/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Incredible resource - thanks!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/FriendlyGarlic1331&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/19shpt8sncfj5/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Well, we prototype it in web-based but we skip it to avoid legal pressure or anything. &lt;/p&gt; &lt;p&gt;Let me see what we can do technically and legally. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
-      <title>🍿 RSS Reader that holds links?</title>
-      <link>https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/</link>
-      <guid>t3_1xt2j95</guid>
-      <pubDate>Tue, 10 Nov 2026 23:46:51 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I&amp;#39;m looking for an RSS Reader that will hold onto links for basically as long as I want. Two months, six months, a year plus. Preferrably as long as I have the physical storage to hold the link. The last one I had timed out after a month or two and I didn&amp;#39;t see a way to turn that off. I dont care if it has to load the info for the website anew each time, I&amp;#39;m willing to wait forever for it so long as it can do that as a background process. &lt;/p&gt; &lt;p&gt;&lt;strong&gt;Requirements: ANDROID, NO AI SUMMARIES, FREE OR CHEAP&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Benefits:&lt;/strong&gt; if it can pull over a thousaand links from a single RSS from months plus back (tbh I dont know if this is physically possible), if I can sustomize the colors and fonts&lt;/p&gt; &lt;p&gt;I&amp;#39;m using this mostly for ao3 (when it comes back) &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Comprehensive_Ad1072"&gt; /u/Comprehensive_Ad1072 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Check and Analyse your RSS feeds</title>
+      <link>https://www.reddit.com/r/rss/comments/1xtoxik/check_and_analyse_your_rss_feeds/</link>
+      <guid>t3_1xtoxik</guid>
+      <pubDate>Wed, 11 Nov 2026 18:06:12 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I have built this tool that analyses RSS feeds: &lt;/p&gt; &lt;p&gt;&lt;a href="https://rssdirectory.org/publishers/check"&gt;https://rssdirectory.org/publishers/check&lt;/a&gt;&lt;/p&gt; &lt;p&gt;It will show you any issues it finds and tell you how you can improve your feed. I would welcome any feedback - anything I missed? Do you think the recommendations are correct?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Odd-Anteater875"&gt; /u/Odd-Anteater875 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtoxik/check_and_analyse_your_rss_feeds/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtoxik/check_and_analyse_your_rss_feeds/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Comprehensive_Ad1072&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Odd-Anteater875&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -55,14 +55,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/terazik-mubaloo&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/19sg7jz40rutc/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;&amp;quot;Read You&amp;quot; is the one I use. It has colour and font customization and I&amp;#39;m fairly certain that it doesn&amp;#39;t delete old articles. Also it&amp;#39;s got a pretty minimal UI if that&amp;#39;s something you like!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/billdietrich1&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtoxik/check_and_analyse_your_rss_feeds/19shqalachtus/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Maybe add colors on the little error and warning and information icons ? Was hard to pick out where the one warning was.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Comprehensive_Ad1072&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xt2j95/rss_reader_that_holds_links/19sg8bnebtuww/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I will certainly look into this one, tho I will also test other suggestions thrown at me. Thank you! &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/devopswannabe&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtoxik/check_and_analyse_your_rss_feeds/19si3g7evg8dc/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hey nice!&lt;/p&gt; &lt;p&gt;A while back I added a similar feature to go-syndication, a golang library for reading/writing feed formats:&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1whf1jn/go_syndication_updates_for_august_2026/"&gt;https://www.reddit.com/r/rss/comments/1whf1jn/go_syndication_updates_for_august_2026/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="https://foragd.app/blog/linter-intro"&gt;https://foragd.app/blog/linter-intro&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="https://foragd.app/linter"&gt;https://foragd.app/linter&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Like yours, the linter checks the feed is valid (per the spec) and additionally checks for some recommended/opinionated features that benefit end-consumers.&lt;/p&gt; &lt;p&gt;For RSS, you might want to check whether the feed meets the &lt;a href="https://www.rssboard.org/rss-profile"&gt;best practices profile&lt;/a&gt; if you aren&amp;#39;t already. For all types, I think you&amp;#39;ve already started covering what makes a feed good (non-exhaustive starter):&lt;/p&gt; &lt;ul&gt; &lt;li&gt;images wherever possible (with alt tags)&lt;/li&gt; &lt;li&gt;useful categorization&lt;/li&gt; &lt;li&gt;proper attribution&lt;/li&gt; &lt;li&gt;use of syndication namespace to define update interval&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
