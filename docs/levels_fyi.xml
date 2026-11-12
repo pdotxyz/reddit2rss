@@ -1,69 +1,50 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
     <title>🍿 Reddit: r/levels_fyi</title>
     <link>https://www.reddit.com/r/levels_fyi/</link>
     <description>Top 2 daily posts from r/levels_fyi, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 07:23:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 19:23:13 +0000</lastBuildDate>
     <item>
-      <title>🍿 AWS L5 Embedded SWE Offer</title>
-      <link>https://www.reddit.com/r/levels_fyi/comments/1xtkhto/aws_l5_embedded_swe_offer/</link>
-      <guid>t3_1xtkhto</guid>
-      <pubDate>Wed, 11 Nov 2026 15:22:16 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;L5 Offer (Austin, 5 years 10 months YOE) - Embedded SWE II AWS Hardware Engineering Services&lt;/p&gt; &lt;p&gt;Base $185K&lt;br/&gt; Year 1 sign-on $91.4K&lt;br/&gt; Year 2 sign-on $70.8K&lt;br/&gt; RSUs 4 years 662&lt;br/&gt; Relocation $8600&lt;/p&gt; &lt;p&gt;Do I have room for negotiation? How is the offer based on my YOE?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Logical_Gur_4200"&gt; /u/Logical_Gur_4200 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtkhto/aws_l5_embedded_swe_offer/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtkhto/aws_l5_embedded_swe_offer/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Quant firms take 6 of the top 10 spots for new grad SWE pay</title>
+      <link>https://www.reddit.com/r/levels_fyi/comments/1xuihqs/quant_firms_take_6_of_the_top_10_spots_for_new/</link>
+      <guid>t3_1xuihqs</guid>
+      <pubDate>Thu, 12 Nov 2026 17:12:56 +0000</pubDate>
+      <content:encoded>&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xuihqs/quant_firms_take_6_of_the_top_10_spots_for_new/"&gt; &lt;img src="https://preview.redd.it/zn22iyz6s71i1.jpeg?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=80b33f72bebc19cbbd921339207d31fea1922032" alt="Quant firms take 6 of the top 10 spots for new grad SWE pay" title="Quant firms take 6 of the top 10 spots for new grad SWE pay" /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hey all,&lt;/p&gt; &lt;p&gt;We pulled the last two years of &lt;a href="http://Levels.fyi"&gt;Levels.fyi&lt;/a&gt; data to see the top paying companies for new grad SWEs. Quant firms were unsurprisingly at the top, but none of the FAANG companies even made the top 10.&lt;/p&gt; &lt;p&gt;Median total comp:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;HRT: $400K&lt;/li&gt; &lt;li&gt;Optiver: $378K&lt;/li&gt; &lt;li&gt;Jane Street: $343K&lt;/li&gt; &lt;li&gt;IMC: $290K&lt;/li&gt; &lt;li&gt;Two Sigma: $259K&lt;/li&gt; &lt;li&gt;Databricks: $247K&lt;/li&gt; &lt;li&gt;OpenAI: $245K&lt;/li&gt; &lt;li&gt;LinkedIn: $235K&lt;/li&gt; &lt;li&gt;Plaid: $231K&lt;/li&gt; &lt;li&gt;Akuna Capital: $231K&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;The pay structure of these companies is very different though, which is worth noting. Quant firms usually pay mostly cash with performance bonuses, so pay can vary a lot. At HRT, the middle half of new grads land anywhere from $250K to $508K. The private companies lean more on equity, which can have more upside, but you usually can&amp;#39;t cash it out until a tender offer or IPO.&lt;/p&gt; &lt;p&gt;Quant firms also hire way fewer new grads than big tech, so these spots are extremely competitive. Most companies on the list also have under 30 submissions at this level, so don&amp;#39;t read too much into the exact numbers.&lt;/p&gt; &lt;p&gt;For anyone who&amp;#39;s interviewed at one of the quant shops, was the process as brutal as people say?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/adana15"&gt; /u/adana15 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://i.redd.it/zn22iyz6s71i1.jpeg"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xuihqs/quant_firms_take_6_of_the_top_10_spots_for_new/"&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;img src="https://preview.redd.it/zn22iyz6s71i1.jpeg?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=80b33f72bebc19cbbd921339207d31fea1922032" alt="Reddit post image" /&gt;&lt;/p&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Logical_Gur_4200&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/adana15&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/AutoModerator&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtkhto/aws_l5_embedded_swe_offer/19shbfii18gjn/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Thanks for sharing your offer &lt;a href="/u/Logical_Gur_4200"&gt;u/Logical_Gur_4200&lt;/a&gt;! If you haven’t already, &lt;a href="https://www.levels.fyi/salaries/add"&gt;consider adding your comp from your new offer to Levels.fyi&lt;/a&gt;! It&amp;#39;s quick and it helps keep this whole thing running! View more salaries and offer data on &lt;a href="https://www.levels.fyi"&gt;Levels.fyi →&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;em&gt;I am a bot, and this action was performed automatically. Please &lt;a href="/message/compose/?to=/r/levels_fyi"&gt;contact the moderators of this subreddit&lt;/a&gt; if you have any questions or concerns.&lt;/em&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Sorry_Cheesecake_382&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtkhto/aws_l5_embedded_swe_offer/19shk2gee2i83/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;275 is what they offer in Austin&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
+      <media:content url="https://preview.redd.it/zn22iyz6s71i1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=80b33f72bebc19cbbd921339207d31fea1922032" medium="image" />
     </item>
     <item>
-      <title>🍿 Should i be negotiating?</title>
-      <link>https://www.reddit.com/r/levels_fyi/comments/1xtzd5r/should_i_be_negotiating/</link>
-      <guid>t3_1xtzd5r</guid>
-      <pubDate>Thu, 12 Nov 2026 01:10:17 +0000</pubDate>
-      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/raman2906"&gt; /u/raman2906 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="/r/auscorp/comments/1xtzayw/should_i_be_negotiating/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtzd5r/should_i_be_negotiating/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Databricks Solutions Architect Offer</title>
+      <link>https://www.reddit.com/r/levels_fyi/comments/1xuc7ft/databricks_solutions_architect_offer/</link>
+      <guid>t3_1xuc7ft</guid>
+      <pubDate>Thu, 12 Nov 2026 13:02:56 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Expecting an offer from Databricks&lt;br/&gt; L4 SA (title is Sr Solutions Engineer)&lt;br/&gt; 4 YOE&lt;/p&gt; &lt;p&gt;How much should I expect and push for at max? They said structure is Base+OTE+RSU.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Specific_Explorer908"&gt; /u/Specific_Explorer908 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xuc7ft/databricks_solutions_architect_offer/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xuc7ft/databricks_solutions_architect_offer/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/raman2906&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Specific_Explorer908&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/AutoModerator&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtzd5r/should_i_be_negotiating/19si1npi4rqjp/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Thanks for sharing your offer &lt;a href="/u/raman2906"&gt;u/raman2906&lt;/a&gt;! If you haven’t already, &lt;a href="https://www.levels.fyi/salaries/add"&gt;consider adding your comp from your new offer to Levels.fyi&lt;/a&gt;! It&amp;#39;s quick and it helps keep this whole thing running! View more salaries and offer data on &lt;a href="https://www.levels.fyi"&gt;Levels.fyi →&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;em&gt;I am a bot, and this action was performed automatically. Please &lt;a href="/message/compose/?to=/r/levels_fyi"&gt;contact the moderators of this subreddit&lt;/a&gt; if you have any questions or concerns.&lt;/em&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Euphoric-Attitude985&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/levels_fyi/comments/1xtzd5r/should_i_be_negotiating/19si60l870dgh/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What industry/role?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
     </item>
   </channel>
 </rss>
