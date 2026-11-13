@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/quant</title>
     <link>https://www.reddit.com/r/quant/</link>
     <description>Top 2 daily posts from r/quant, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 19:40:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 07:38:28 +0000</lastBuildDate>
     <item>
-      <title>🍿 TXSE</title>
-      <link>https://www.reddit.com/r/quant/comments/1xtylvy/txse/</link>
-      <guid>t3_1xtylvy</guid>
-      <pubDate>Thu, 12 Nov 2026 00:34:56 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;What’s everyone’s take on the Texas Stock Exchange (TXSE)? I see they’ve secured backing from major institutions, but I’m struggling to understand their technical edge or unique market niche—unlike something like IEX&amp;#39;s speed bump. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/OutdoorSportBoy"&gt; /u/OutdoorSportBoy &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xtylvy/txse/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xtylvy/txse/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Tparquet - Parquet for time series. Tick data at about half their ZSTD size, lossless, and still Parquet.</title>
+      <link>https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/</link>
+      <guid>t3_1xup9k7</guid>
+      <pubDate>Thu, 12 Nov 2026 21:28:01 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;If you want to save some space on your market data hard drive vs parquet, we have a very small fork of parquet libraries/loaders that&amp;#39;ll give you ~50% better compression (with pcodec), and we&amp;#39;re also backing initiative to make it an official parquet compression codec.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;It&amp;#39;ll be actually a couple of bytes of change to switch over when it becomes officially supported.&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;All credit goes to Martin Loncaric, the author of pcodec, who&amp;#39;s also the maintainer of the excellent reference implementation: &lt;a href="https://github.com/pcodec/pcodec"&gt;https://github.com/pcodec/pcodec&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Daniel_Aperiodic"&gt; /u/Daniel_Aperiodic &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://github.com/aperiodic-io/tparquet"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/OutdoorSportBoy&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Daniel_Aperiodic&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,14 +25,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/MuteQuant&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xtylvy/txse/19si15pqbglj8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;It came about from political bullshit, typical anti ESG red state vs blue state anti-woke crap. The main &amp;#39;benefit&amp;#39; is that it might drive down costs and offer some competition to NYSE/Nasdaq. But yeah, mostly a pile of crap&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/maticalgos&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/19sjntfsen6f8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;This is interesting, will give it a shot. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/peepspeepstoottoot&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xtylvy/txse/19si0wv861x51/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;For all their big talk about Y’all Street they still have their primary matching engine in Secaucus&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/CookByTheBook&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/19sjt7o7mkvgj/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Clean!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
@@ -60,9 +60,9 @@
           &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;The interesting overlap is that both roles touch live trading but from different directions. One shapes strategy behavior while the other makes execution predictable under pressure&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Gloomy_Cupcake_8510&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/19sja1x8oopgk/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I&amp;#39;d compare actual job descriptions rather than titles. Ask how much time goes into research tooling, production trading code, latency tuning and collaboration with traders&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/Ok-Cat-9189&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/19sjjn034ut42/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;these aren’t really separate roles. in alot of companies they are two different responsibilities which simply fall under the responsibility of a quant dev&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>

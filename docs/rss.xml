@@ -3,48 +3,18 @@
   <channel>
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
-    <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 19:12:21 +0000</lastBuildDate>
+    <description>Top 1 daily posts from r/rss, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Fri, 13 Nov 2026 07:10:09 +0000</lastBuildDate>
     <item>
-      <title>🍿 Biblio Times: RSS newspaper &amp; magazine (local, no account, one-time)</title>
-      <link>https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/</link>
-      <guid>t3_1xts4pr</guid>
-      <pubDate>Wed, 11 Nov 2026 20:05:44 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hi &lt;a href="/r/rss"&gt;r/rss&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I’ve been working on a different kind of RSS reader called Biblio Times. Instead of a river of posts or a list of headlines, it takes the feeds you choose and lays them out each morning as a newspaper (or, if you prefer, a magazine).&lt;/p&gt; &lt;p&gt;A few things that mattered to me while building it:&lt;/p&gt; &lt;p&gt;• Your device is the press. It fetches the public RSS/Atom feeds itself. Nothing goes through our servers, there’s no account, and we never see what you read.&lt;/p&gt; &lt;p&gt;• It looks and feels like paper: front page, sections, columns, proper serif type (or a tight grotesk), and photos screened as halftones (or in colour). On iPhone it arrives folded; on iPad and Mac it opens as a spread. There’s also a Dystopian edition on grey pulp with typewriter text if you want that vibe.&lt;/p&gt; &lt;p&gt;• You can use starter lists for a bunch of countries (or Ideas / Dispatches / Design desks), or just paste any site/feed URL. Custom sections, topics to follow, words to leave out, clippings, back issues for a fortnight, widgets, etc.&lt;/p&gt; &lt;p&gt;• Pricing is one-time (Press Pass ~$20 for your paper + one magazine across your devices; optional higher tier for more papers + Family Sharing). First three mornings are free. No subscription.&lt;/p&gt; &lt;p&gt;It’s on the App Store for iPhone, iPad, and Mac (iOS 18+ / macOS 15+). One purchase covers them all.&lt;/p&gt; &lt;p&gt;I’m the developer (same person as the Biblio.ink bookshelf app). Happy to answer questions about how it handles feeds, layout, offline behaviour, or anything else. Feedback is very welcome, especially from people who live in their readers.&lt;/p&gt; &lt;p&gt;Links:&lt;br/&gt; &lt;a href="https://biblio.ink/times"&gt;https://biblio.ink/times&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="https://apps.apple.com/app/biblio-times-rss-newspaper/id6820293984"&gt;https://apps.apple.com/app/biblio-times-rss-newspaper/id6820293984&lt;/a&gt;&lt;/p&gt; &lt;p&gt;(Also, with Reddit’s own RSS feeds ending tomorrow, I’ve been thinking a lot about how people still want to pull content into a calmer, offline-friendly format. This was my attempt at that.)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/FriendlyGarlic1331"&gt; /u/FriendlyGarlic1331 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 Sparkshelf - A reading app hopefully to be the best out there, come and try it.</title>
+      <link>https://www.reddit.com/r/rss/comments/1xu95ub/sparkshelf_a_reading_app_hopefully_to_be_the_best/</link>
+      <guid>t3_1xu95ub</guid>
+      <pubDate>Thu, 12 Nov 2026 10:16:38 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I built an Android app to make reading and saving articles easier, looking for beta testers!&lt;/p&gt; &lt;p&gt;hello everyone!&lt;/p&gt; &lt;p&gt;I&amp;#39;ve been working on an Android app called SparkShelf, and I&amp;#39;m finally opening it up for public beta testing.&lt;/p&gt; &lt;p&gt;Here&amp;#39;s what it can do:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;📚 Save articles and organize them with folders, tags, highlights, and notes.&lt;/li&gt; &lt;li&gt;📰 Follow RSS feeds and discover news based on your interests.&lt;/li&gt; &lt;li&gt;✨ Summarize long articles and extract useful insights with AI.&lt;/li&gt; &lt;li&gt;🔥 Chat with Sparky, an AI assistant that helps you explore and manage your reading.&lt;/li&gt; &lt;li&gt;🎧 Listen to articles when you don&amp;#39;t feel like reading.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;It&amp;#39;s still in beta, so there will probably be some rough edges. That&amp;#39;s exactly why I&amp;#39;m sharing it!&lt;/p&gt; &lt;p&gt;I&amp;#39;d really appreciate some honest feedback, and please join me on discord for easier reporting and be part of our community &lt;a href="https://discord.gg/MpWgpGX5uv"&gt;https://discord.gg/MpWgpGX5uv&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Google Play beta: &lt;a href="https://play.google.com/store/apps/details?id=com.sparkshelf.app"&gt;https://play.google.com/store/apps/details?id=com.sparkshelf.app&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Thanks to anyone willing to give it a try! Every bit of feedback helps. ❤️&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/itsner0o"&gt; /u/itsner0o &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xu95ub/sparkshelf_a_reading_app_hopefully_to_be_the_best/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xu95ub/sparkshelf_a_reading_app_hopefully_to_be_the_best/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/FriendlyGarlic1331&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Budget-Leg-453&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/19sil93md1tid/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Thanks - I’ve just downloaded this and it looks great! It reminded me how great the old way of reading newspapers really was, a much more calming way to read it. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/FriendlyGarlic1331&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xts4pr/biblio_times_rss_newspaper_magazine_local_no/19silcbc57p9c/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;We keep updating this app almost every week. You can try magazine layout with specific sources like your hobby, your sport, it’s so much fun and useful. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
-    </item>
-    <item>
-      <title>🍿 I got tired of seeing the same news 20 times across my feeds, so I built an open-source reader that clusters and deduplicates coverage (RadarRSS)</title>
-      <link>https://www.reddit.com/r/rss/comments/1xtzlv1/i_got_tired_of_seeing_the_same_news_20_times/</link>
-      <guid>t3_1xtzlv1</guid>
-      <pubDate>Thu, 12 Nov 2026 01:21:22 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hey &lt;a href="/r/rss"&gt;r/rss&lt;/a&gt;,&lt;/p&gt; &lt;p&gt;Like many of you, my RSS feeds are a firehose. Whenever a major tech or world event breaks, I end up scrolling through dozens of articles from different outlets reporting the exact same press release with slightly different headlines.&lt;/p&gt; &lt;p&gt;Most existing readers either do basic string matching (which misses paraphrased stories) or lock semantic clustering behind a monthly cloud subscription. &lt;/p&gt; &lt;p&gt;I wanted something local, fast, and hackable, so I spent the last few months building &lt;strong&gt;RadarRSS&lt;/strong&gt;:&lt;/p&gt; &lt;p&gt;&lt;strong&gt;How it handles deduplication:&lt;/strong&gt; - Ingests feeds in real time and calculates text similarity to cluster related stories into a single thread. - If you provide an optional Gemini API key, it generates a quick multi-source synthesis/bullet-point summary so you don&amp;#39;t have to open 5 tabs. If you don&amp;#39;t use AI, clustering still works out-of-the-box.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The Stack &amp;amp; Footprint:&lt;/strong&gt; - Frontend: React 19 + Tailwind. - Desktop: Packaged with Tauri 2.0 (Rust backend, ~6.8 MB binary) to keep RAM usage minimal compared to standard web wrappers, with an Electron fallback. - License: MIT, 100% open-source, local-first data storage.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Where I need your brutal feedback:&lt;/strong&gt; 1. Clustering thresholds: Balancing false positives (grouping unrelated stories) vs. false negatives (failing to cluster slightly different angles). 2. What edge cases do you run into with heavy/malformed RSS/Atom feeds that break standard parsers?&lt;/p&gt; &lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/dznass-cmd/RadarRSS"&gt;https://github.com/dznass-cmd/RadarRSS&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to hear how you currently deal with feed fatigue and what features you&amp;#39;d expect from a clustering engine.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Significant-Flan5228"&gt; /u/Significant-Flan5228 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtzlv1/i_got_tired_of_seeing_the_same_news_20_times/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtzlv1/i_got_tired_of_seeing_the_same_news_20_times/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
-    &lt;div class="post-stats"&gt;
-      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Significant-Flan5228&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/itsner0o&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -55,9 +25,9 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (1)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Financial-Form-1733&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xtzlv1/i_got_tired_of_seeing_the_same_news_20_times/19sirl3fxev6t/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I did something similar, but it pulls my feeds from FreshRSS, then exposes a new feed with storylines, which will go back to my FreshRSS. &lt;/p&gt; &lt;p&gt;This way I can read it in any reader, either just the aggregated feed or the original ones as well. Also creates a digest twice a day. &lt;/p&gt; &lt;p&gt;With enough sources the publishing happens on most reported stories across all sources&lt;/p&gt; &lt;p&gt;Fully AI slop, but works for me. Might publish on GitHub once&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/aygross&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xu95ub/sparkshelf_a_reading_app_hopefully_to_be_the_best/19sjdrd796p1d/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;The feedback is nobody needs another ai slop rss reader&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
