@@ -4,7 +4,7 @@
     <title>🍿 Reddit: r/quant</title>
     <link>https://www.reddit.com/r/quant/</link>
     <description>Top 2 daily posts from r/quant, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 07:38:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 19:35:14 +0000</lastBuildDate>
     <item>
       <title>🍿 Tparquet - Parquet for time series. Tick data at about half their ZSTD size, lossless, and still Parquet.</title>
       <link>https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/</link>
@@ -30,21 +30,21 @@
           &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;This is interesting, will give it a shot. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/CookByTheBook&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/19sjt7o7mkvgj/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Clean!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/eightbyeight&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xup9k7/tparquet_parquet_for_time_series_tick_data_at/19sjzzqrv0daa/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Glad to see you are looking to merge these patches so they become part of the official package, dependency hell is a real problem.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
     <item>
-      <title>🍿 Quant Strategies Developer vs Quant Systems Developer</title>
-      <link>https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/</link>
-      <guid>t3_1xuivpe</guid>
-      <pubDate>Thu, 12 Nov 2026 17:27:02 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hi team,&lt;/p&gt; &lt;p&gt;What are the differences between a quant strats dev and the quant low latency c++ developer?&lt;/p&gt; &lt;p&gt;What are some of the differences in problems being solved by these roles? What is the salary comparison?&lt;/p&gt; &lt;p&gt;I know the low latency quant developers barely touch math, and need deep C++ and operating systems knowledge and build out trading systems.&lt;/p&gt; &lt;p&gt;How do they interact with the researchers and traders?&lt;/p&gt; &lt;p&gt;If you were to pick either of these roles, is the quant strats developer or low latency c++ developer more competitive?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/SnooRabbits9587"&gt; /u/SnooRabbits9587 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 How do quant researchers manage drawdowns in concentrated cross-sectional equity momentum portfolios?</title>
+      <link>https://www.reddit.com/r/quant/comments/1xuuxs5/how_do_quant_researchers_manage_drawdowns_in/</link>
+      <guid>t3_1xuuxs5</guid>
+      <pubDate>Fri, 13 Nov 2026 01:35:30 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hi All!,&lt;br/&gt; I’m an independent researcher developing a systematic equity momentum strategy in Python/Jupyter, and I’m looking for technical feedback from people with experience in quantitative portfolio construction and risk management.&lt;br/&gt; Strategy overview:&lt;br/&gt; ● Universe: S&amp;amp;P 500 equities&lt;br/&gt; ● Signal: Cross-sectional momentum (12–1)&lt;br/&gt; ● Portfolio: Top 10 stocks&lt;br/&gt; ● Rebalancing: Monthly&lt;br/&gt; ● Weighting: Inverse volatility&lt;br/&gt; ● Risk management: Sector concentration limits, volatility targeting, and defensive allocation&lt;br/&gt; ● Strategy type: Long-only, no leverage&lt;br/&gt; Preliminary backtest results (approximately 2018–2026):&lt;br/&gt; ● CAGR: 37.99%&lt;br/&gt; ● Sharpe ratio: 1.33&lt;br/&gt; ● Maximum drawdown: −24.31%&lt;br/&gt; ● Average equity exposure: approximately 84%&lt;br/&gt; These results are exploratory, not independently validated. I’m currently auditing historical constituent membership, ticker mapping, adjusted prices, execution assumptions, and potential survivorship bias.&lt;br/&gt; My main problem:&lt;br/&gt; I’m trying to reduce maximum drawdown without sacrificing a disproportionate amount of the strategy’s compounded returns.&lt;br/&gt; I’ve tested several approaches:&lt;br/&gt; ● Increasing diversification from 10 to 15 or 20 stocks&lt;br/&gt; ● Weekly instead of monthly rebalancing&lt;br/&gt; ● Fixed and trailing stop losses&lt;br/&gt; ● More conservative volatility targeting&lt;br/&gt; ● Inverse ETF hedging&lt;br/&gt; ● Market-residual momentum selection&lt;br/&gt; Most variations either reduced CAGR significantly or failed to improve maximum drawdown.&lt;br/&gt; My drawdown attribution suggests that the problem is not simply excessive semiconductor exposure. Significant losses have also occurred across cyclical sectors and stocks sharing common risk exposures.&lt;br/&gt; For example, the portfolio experienced a drawdown of approximately 18% during a period in 2021 when SPY gained around 5%. This suggests that market beta alone cannot explain the strategy’s downside risk.&lt;br/&gt; My questions:&lt;br/&gt; 1. How do institutional systematic equity managers control drawdowns in concentrated momentum portfolios without consistently exiting their strongest trends?&lt;br/&gt; 2. Would you prioritize factor risk budgeting, downside covariance, beta constraints, or conditional exposure scaling?&lt;br/&gt; 3. Are there research papers or open-source implementations that specifically address drawdown management in long-only cross-sectional momentum strategies?&lt;br/&gt; 4. How would you distinguish genuine portfolio risk improvements from backtest overfitting?&lt;br/&gt; I’m particularly interested in approaches that preserve the original momentum signal while improving portfolio-level risk management.&lt;br/&gt; I’m not looking for stock picks or trading signals. I’m looking for methodological guidance and relevant academic research.&lt;br/&gt; Thanks in advance for any insights or references.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Former_Might_7752"&gt; /u/Former_Might_7752 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuuxs5/how_do_quant_researchers_manage_drawdowns_in/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuuxs5/how_do_quant_researchers_manage_drawdowns_in/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/SnooRabbits9587&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Former_Might_7752&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -55,14 +55,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Internal-Put-2059&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/19sje0gd7eleq/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;The interesting overlap is that both roles touch live trading but from different directions. One shapes strategy behavior while the other makes execution predictable under pressure&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/ronburgandy_28&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuuxs5/how_do_quant_researchers_manage_drawdowns_in/19sku1bo52i0z/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;did you just spend all those words to say you traded beta for 8 years of a tech bull run with no out of sample backtesting?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Ok-Cat-9189&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuivpe/quant_strategies_developer_vs_quant_systems/19sjjn034ut42/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;these aren’t really separate roles. in alot of companies they are two different responsibilities which simply fall under the responsibility of a quant dev&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/Plus-Shirt-8465&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xuuxs5/how_do_quant_researchers_manage_drawdowns_in/19skvoeznzs8z/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Must say I assumed this was out of sample .. maybe wrongly &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
