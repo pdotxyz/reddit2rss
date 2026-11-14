@@ -3,8 +3,8 @@
   <channel>
     <title>🍿 Reddit: r/rss</title>
     <link>https://www.reddit.com/r/rss/</link>
-    <description>Top 1 daily posts from r/rss, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 19:10:11 +0000</lastBuildDate>
+    <description>Top 2 daily posts from r/rss, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Sat, 14 Nov 2026 07:12:17 +0000</lastBuildDate>
     <item>
       <title>🍿 Since Reddit's RSS feeds stop today, I wrote a short guide for finding feeds relevant to popular subreddits</title>
       <link>https://www.reddit.com/r/rss/comments/1xvbpjb/since_reddits_rss_feeds_stop_today_i_wrote_a/</link>
@@ -25,15 +25,35 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Rhmech&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvbpjb/since_reddits_rss_feeds_stop_today_i_wrote_a/19sl1re3jrk04/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I am waiting for RssHub to do something &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/Gorgeous_Broccoli&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvbpjb/since_reddits_rss_feeds_stop_today_i_wrote_a/19sl9we7zm41v/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Just join Lemmy instead. Reddit is enshittified&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Odd-Anteater875&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvbpjb/since_reddits_rss_feeds_stop_today_i_wrote_a/19sl1hv7d1s00/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I would love a replacement for &lt;a href="/r/rss"&gt;r/rss&lt;/a&gt;!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/Medialunch&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvbpjb/since_reddits_rss_feeds_stop_today_i_wrote_a/19slp6w7cnaio/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Does Lemmy have RSS?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 I'm building a smarter (and hopefully better) RSS feeder - what would you like to see?</title>
+      <link>https://www.reddit.com/r/rss/comments/1xvv6id/im_building_a_smarter_and_hopefully_better_rss/</link>
+      <guid>t3_1xvv6id</guid>
+      <pubDate>Sat, 14 Nov 2026 06:18:24 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hey &lt;a href="/r/rss"&gt;r/rss&lt;/a&gt;!&lt;/p&gt; &lt;p&gt;I&amp;#39;m working on a project to build a (hopefully) smarter, (hopefully) more organized RSS reader, and I&amp;#39;m conducting a short survey to better understand how people consume news/media/online info, what annoys them about existing RSS readers (Feedly, Inoreader, Particle, etc.), and what features they&amp;#39;d find useful.&lt;/p&gt; &lt;p&gt;I&amp;#39;d really appreciate your input, especially from experienced RSS users! Here&amp;#39;s the survey: &lt;a href="https://docs.google.com/forms/d/17BDO7YkXK_KulG3XZDTI1FAukcoYS-0i1mTy1W1NCxA/viewform"&gt;https://docs.google.com/forms/d/17BDO7YkXK_KulG3XZDTI1FAukcoYS-0i1mTy1W1NCxA/viewform&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Thanks in advance! Also any feedback, feature suggestions, or recommendations for the tech stack are more than welcome in the comments ;)&lt;/p&gt; &lt;p&gt;(Disclaimer - I know there&amp;#39;s already way too much AI slop out there, and I really don&amp;#39;t wanna add to it lol. That&amp;#39;s why I&amp;#39;m doing this survey in the first place.)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/WhileSquare6980"&gt; /u/WhileSquare6980 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvv6id/im_building_a_smarter_and_hopefully_better_rss/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/rss/comments/1xvv6id/im_building_a_smarter_and_hopefully_better_rss/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/WhileSquare6980&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
     </item>
   </channel>
 </rss>

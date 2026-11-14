@@ -4,7 +4,37 @@
     <title>🍿 Reddit: r/cscareerquestions</title>
     <link>https://www.reddit.com/r/cscareerquestions/</link>
     <description>Top 2 daily posts from r/cscareerquestions, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 19:30:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 07:33:00 +0000</lastBuildDate>
+    <item>
+      <title>🍿 Was Microsoft Outlook Outage Caused by Layoffs and AI?!!</title>
+      <link>https://www.reddit.com/r/cscareerquestions/comments/1xviu9p/was_microsoft_outlook_outage_caused_by_layoffs/</link>
+      <guid>t3_1xviu9p</guid>
+      <pubDate>Fri, 13 Nov 2026 20:31:10 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Saw this post on Twitter of a Microsoft employee saying that the outage was a multi-day problem instead of a couple hours because none of the current engineers knew how to fix it. Everyone who managed the applications were laid off and the rest of the engineers are just vibe coders who didnt know what to do. Is there any truth to these rumors? Is the investment in AI leading to more problems than solutions? Is this another sign of the AI bubble popping?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Fearless-Cellist-245"&gt; /u/Fearless-Cellist-245 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xviu9p/was_microsoft_outlook_outage_caused_by_layoffs/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xviu9p/was_microsoft_outlook_outage_caused_by_layoffs/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Fearless-Cellist-245&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/googleguyst&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xviu9p/was_microsoft_outlook_outage_caused_by_layoffs/19sla2tv1n21u/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I&amp;#39;m sure there will be a thorough post mortem, which hopefully will be made public in order to restore trust. Without knowing any details, I&amp;#39;m comfortable guessing that this was either caused by a crazy black swan event OR by a significant failure of engineering culture. It&amp;#39;s not excusable for a platform like M365 to have a 12+ hour outage and there do need to be significant changes in how it&amp;#39;s operated either way.&lt;/p&gt; &lt;p&gt;Given how poorly GitHub has been running for the past couple years, I&amp;#39;d be surprised if this weren&amp;#39;t a systemic issue.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/RichCorinthian&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xviu9p/was_microsoft_outlook_outage_caused_by_layoffs/19slakdpxhquc/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;GitHub is, I think, the same problem from a different direction. In our conversations with github support, they&amp;#39;ve been fairly direct in acknowledging that, since they turned github into a build tool, they&amp;#39;re getting swamped with people writing and building vibe-coded slop.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
     <item>
       <title>🍿 Don't Study CS. Don't Study Engineering. Don't Study Anything, Apparently.</title>
       <link>https://www.reddit.com/r/cscareerquestions/comments/1xv7db1/dont_study_cs_dont_study_engineering_dont_study/</link>
@@ -25,44 +55,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/MrDuckly&lt;/h4&gt;
+          &lt;h4&gt;Reply 1 — Reddit user&lt;/h4&gt;
           &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xv7db1/dont_study_cs_dont_study_engineering_dont_study/19skpw1sy2phe/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
           &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Maybe, don&amp;#39;t study this sub (or any subreddit).&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Technical_Jicama_434&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xv7db1/dont_study_cs_dont_study_engineering_dont_study/19skqs3o1s9dt/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;This is the answer &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
-    </item>
-    <item>
-      <title>🍿 Anyone feel like it’s becoming the norm to treat employees like crap?</title>
-      <link>https://www.reddit.com/r/cscareerquestions/comments/1xurvf3/anyone_feel_like_its_becoming_the_norm_to_treat/</link>
-      <guid>t3_1xurvf3</guid>
-      <pubDate>Thu, 12 Nov 2026 23:15:56 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I’ve worked on some bad teams before but seems like now so many people I know myself included are stuck in super toxic environments where managements treat their employees super poorly and don’t even pretend to care. Layoffs, performance tracking, re org are re org and leadership telling people if they don’t like it leave. &lt;/p&gt; &lt;p&gt;At my company most of the nice/chill managers were pushed out and replaced with super aggressive social climbers that tend to treat their teams really badly. My boss personally talks down to people and is super pushy and aggressive and his boss is like that too. Both replaced mangers that were actually nice to their team. Anyone else seeing this?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Cultural-Gear-1323"&gt; /u/Cultural-Gear-1323 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xurvf3/anyone_feel_like_its_becoming_the_norm_to_treat/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xurvf3/anyone_feel_like_its_becoming_the_norm_to_treat/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
-    &lt;div class="post-stats"&gt;
-      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Cultural-Gear-1323&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/ClittoryHinton&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xurvf3/anyone_feel_like_its_becoming_the_norm_to_treat/19sjp6d3k6eit/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;AI is creating a sink or swim environment with a lot of puffed up egos on one hand, and a lot of miserable people on the other. It’s very clear that the mandate is to automate away everyone else’s job if you want to keep your own, creating a hunger games kind of environment where fewer and fewer people and teams can succeed and be rewarded.&lt;/p&gt; &lt;p&gt;I’m out personally, this does not bring meaning to my life.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/IcyBander&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xurvf3/anyone_feel_like_its_becoming_the_norm_to_treat/19sjui18wn9c0/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;You just described my current workplace and I hadn&amp;#39;t put it so succinctly yet, but that&amp;#39;s exactly what is happening.&lt;/p&gt; &lt;p&gt;Product is coding now and claims their prototype is better than engineering&amp;#39;s solution (it wasn&amp;#39;t, but maybe one day in the not too distant future). Senior/Staff engineers are automating whole features and making juniors look worthless.&lt;/p&gt; &lt;p&gt;Asshole moves but it&amp;#39;s all underpinned by fear imo. These people were working well together six months ago.&lt;/p&gt; &lt;p&gt;I wish there was more &amp;#39;high tide lifts all boats&amp;#39; in AI but honestly that was rarely the culture in tech to begin with.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/QualitySoftwareGuy&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/cscareerquestions/comments/1xv7db1/dont_study_cs_dont_study_engineering_dont_study/19skuzwvncz2d/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Exactly. Reddit is a bubble where you&amp;#39;re rewarded (upvoted) if you share the majority opinion, but your comment is quite literally collapsed/hidden (if it receives enough downvotes) if you go against the majority opinion. Some also call this the &amp;quot;hive mind&amp;quot;.&lt;/p&gt; &lt;p&gt;Outside of Reddit, people are still getting these degrees (and jobs afterwards) without giving a shit about what Reddit thinks.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
