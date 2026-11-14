@@ -1,69 +1,94 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>🍿 Reddit: r/vending</title>
+    <title>🍿 Reddit - r/vending</title>
     <link>https://www.reddit.com/r/vending/</link>
-    <description>Top 2 daily posts from r/vending, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 19:03:37 +0000</lastBuildDate>
+    <description>Daily top Reddit posts from r/vending</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Nov 2026 23:11:19 +0000</lastBuildDate>
     <item>
-      <title>🍿 New to the game in California!</title>
-      <link>https://www.reddit.com/r/vending/comments/1xvrnbm/new_to_the_game_in_california/</link>
-      <guid>t3_1xvrnbm</guid>
-      <pubDate>Sat, 14 Nov 2026 03:05:32 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Hello everyone!&lt;br/&gt; My brother-in-law and I are starting our vending machine business and we we were lucky enough to get into a high school and we are needing some tips on top sellers for California smart snack approved things to put in our machine. Any advice would be greatly appreciated! &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Objective-Ad-412"&gt; /u/Objective-Ad-412 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xvrnbm/new_to_the_game_in_california/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xvrnbm/new_to_the_game_in_california/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
-    &lt;div class="post-stats"&gt;
-      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Objective-Ad-412&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/No_Wafer_1667&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xvrnbm/new_to_the_game_in_california/19smiiscfq63k/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;They&amp;#39;ll want healthy vending, don&amp;#39;t fall for it. If you only do healthy items, you&amp;#39;ll be sunk in days. Schools are not good for smart coolers amongst the student population. They spend a lot of time trying to defeat it. Get good US-made traditional vending machines and wrap them with the school&amp;#39;s logo. It will be harder for them to want to replace you.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/manofdacloth&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xvrnbm/new_to_the_game_in_california/19smx1zmlblur/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Are smart coolers easily defeated or tricked? I thought the ai cameras see everything&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+      <title>[#2] I mapped every school, gym, hospital and apartment in Omaha with what operators here say those locations make</title>
+      <link>https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/</link>
+      <description><![CDATA[
+        <h2>I mapped every school, gym, hospital and apartment in Omaha with what operators here say those locations make</h2>
+
+        <p>
+          <b>Author:</b> /u/Agitated_Thanks2429
+        </p>
+
+        <p>
+          <a href="https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/">
+            View original Reddit post
+          </a>
+        </p>
+
+        
+    <div class="post-stats">
+      <h3>📊 Post statistics</h3>
+      <ul>
+        <li><b>Author:</b> /u/Agitated_Thanks2429</li>
+        <li><b>Popularity:</b> Reddit Top (day) #2</li>
+        <li><b>Ranking:</b> 2nd in daily Top feed</li>
+        <li><b>Replies fetched:</b> 0</li>
+        <li><b>Replies published:</b> 0</li>
+      </ul>
+    </div>
+    <hr/>
+    
+
+        <div class="post-content">
+          <!-- SC_OFF --><div class="md"><p><strong>Three things the numbers say that I didn&#39;t expect:</strong></p> <ol> <li>Warehouses sound like a lock and mostly report $100 to $350 a month.</li> <li>&quot;School&quot; means nothing. Elementary teacher lounges: $200 to $390. Colleges and tech schools: $1,300 to $3,000.</li> <li>Repair and tire shops: $150 to $460. Dealerships: $525 to $760.</li> </ol> <p>Small samples, self-reported, so treat them as ranges.</p> <p>What location surprised you most, good or bad?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href="https://www.reddit.com/user/Agitated_Thanks2429"> /u/Agitated_Thanks2429 </a> <br/> <span><a href="https://i.redd.it/r0xam0q2cm1i1.png">[link]</a></span> &#32; <span><a href="https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/">[comments]</a></span>
+        </div>
+
+        
+
+        <p>No comments available.</p>
+        ]]></description>
+      <guid isPermaLink="false">https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/</guid>
+      <pubDate>Sat, 14 Nov 2026 18:08:26 +0000</pubDate>
     </item>
     <item>
-      <title>🍿 I mapped every school, gym, hospital and apartment in Omaha with what operators here say those locations make</title>
-      <link>https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/</link>
-      <guid>t3_1xw91mt</guid>
-      <pubDate>Sat, 14 Nov 2026 18:08:26 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;&lt;strong&gt;Three things the numbers say that I didn&amp;#39;t expect:&lt;/strong&gt;&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Warehouses sound like a lock and mostly report $100 to $350 a month.&lt;/li&gt; &lt;li&gt;&amp;quot;School&amp;quot; means nothing. Elementary teacher lounges: $200 to $390. Colleges and tech schools: $1,300 to $3,000.&lt;/li&gt; &lt;li&gt;Repair and tire shops: $150 to $460. Dealerships: $525 to $760.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Small samples, self-reported, so treat them as ranges.&lt;/p&gt; &lt;p&gt;What location surprised you most, good or bad?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/Agitated_Thanks2429"&gt; /u/Agitated_Thanks2429 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://i.redd.it/r0xam0q2cm1i1.png"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
-    &lt;div class="post-stats"&gt;
-      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/Agitated_Thanks2429&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/Fine-Ebb991&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/19smx2wmgam9v/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;how do you even come up with these numbers?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;
-        &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/Agitated_Thanks2429&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/vending/comments/1xw91mt/i_mapped_every_school_gym_hospital_and_apartment/19smxjjsehlxh/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I didn&amp;#39;t come up with them, people here did. I went back through this sub and pulled every post or comment where someone gave a dollar figure for a machine at a specific kind of place, then grouped them by location type. The ranges are just the middle half of what got posted.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
-        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+      <title>[#1] Cheap/Basic insurance for single machine? U.S. Based.</title>
+      <link>https://www.reddit.com/r/vending/comments/1xwd8wy/cheapbasic_insurance_for_single_machine_us_based/</link>
+      <description><![CDATA[
+        <h2>Cheap/Basic insurance for single machine? U.S. Based.</h2>
+
+        <p>
+          <b>Author:</b> /u/JerryContrary
+        </p>
+
+        <p>
+          <a href="https://www.reddit.com/r/vending/comments/1xwd8wy/cheapbasic_insurance_for_single_machine_us_based/">
+            View original Reddit post
+          </a>
+        </p>
+
+        
+    <div class="post-stats">
+      <h3>📊 Post statistics</h3>
+      <ul>
+        <li><b>Author:</b> /u/JerryContrary</li>
+        <li><b>Popularity:</b> Reddit Top (day) #1</li>
+        <li><b>Ranking:</b> 1st in daily Top feed</li>
+        <li><b>Replies fetched:</b> 0</li>
+        <li><b>Replies published:</b> 0</li>
+      </ul>
+    </div>
+    <hr/>
+    
+
+        <div class="post-content">
+          &#32; submitted by &#32; <a href="https://www.reddit.com/user/JerryContrary"> /u/JerryContrary </a> <br/> <span><a href="https://www.reddit.com/r/vending/comments/1xwd8wy/cheapbasic_insurance_for_single_machine_us_based/">[link]</a></span> &#32; <span><a href="https://www.reddit.com/r/vending/comments/1xwd8wy/cheapbasic_insurance_for_single_machine_us_based/">[comments]</a></span>
+        </div>
+
+        
+
+        <p>No comments available.</p>
+        ]]></description>
+      <guid isPermaLink="false">https://www.reddit.com/r/vending/comments/1xwd8wy/cheapbasic_insurance_for_single_machine_us_based/</guid>
+      <pubDate>Sat, 14 Nov 2026 21:03:21 +0000</pubDate>
     </item>
   </channel>
 </rss>
