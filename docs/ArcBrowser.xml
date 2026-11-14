@@ -1,29 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
     <title>🍿 Reddit: r/ArcBrowser</title>
     <link>https://www.reddit.com/r/ArcBrowser/</link>
-    <description>Top 1 daily posts from r/ArcBrowser, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 07:14:27 +0000</lastBuildDate>
+    <description>Top 2 daily posts from r/ArcBrowser, with individual post statistics and nested replies.</description>
+    <lastBuildDate>Sat, 14 Nov 2026 19:14:30 +0000</lastBuildDate>
     <item>
-      <title>🍿 Crest is the closest to Arc</title>
-      <link>https://www.reddit.com/r/ArcBrowser/comments/1xvuydo/crest_is_the_closest_to_arc/</link>
-      <guid>t3_1xvuydo</guid>
-      <pubDate>Sat, 14 Nov 2026 06:05:50 +0000</pubDate>
-      <content:encoded>&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/seshakiran"&gt; /u/seshakiran &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="/r/CrestBrowser/comments/1xvuy34/crest_is_the_closest_to_arc/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xvuydo/crest_is_the_closest_to_arc/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 PSA: Arc shuts down on Dec 22. Key dates so you don’t lose your stuff</title>
+      <link>https://www.reddit.com/r/ArcBrowser/comments/1xvxlua/psa_arc_shuts_down_on_dec_22_key_dates_so_you/</link>
+      <guid>t3_1xvxlua</guid>
+      <pubDate>Sat, 14 Nov 2026 08:45:06 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;If you haven’t seen the official sunset timeline yet, here are the dates that matter:&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Oct 22:&lt;/strong&gt; Sunset announced. You can no longer create new Arc accounts.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Nov 23:&lt;/strong&gt; Arc Search on iOS and Android keeps working as a browser, but all AI features turn off, and you can no longer sign in or sync with Arc. Arc for macOS and Windows starts showing sunset reminders.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Dec 15:&lt;/strong&gt; Last day to request a copy of the personal data tied to your Arc account, or to ask for it to be deleted.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Dec 22:&lt;/strong&gt; Arc is sunset.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Arc for macOS and Windows stops working, and you can’t sign in anymore&lt;/li&gt; &lt;li&gt;All Arc accounts are deactivated and Arc services turn off&lt;/li&gt; &lt;li&gt;Personal data tied to your account is deleted within 30 days and can’t be retrieved&lt;/li&gt; &lt;li&gt;Arc Search for Android is removed from the Play Store and from your devices&lt;/li&gt; &lt;li&gt;Arc Search for iOS keeps working as a mobile browser&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;What to do before then:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Back up your Spaces, tabs and other browsing data before Dec 22.&lt;/strong&gt; After that, you won’t be able to open Arc at all.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Moving to Dia?&lt;/strong&gt; It can import your Spaces, favorites, pinned tabs, folders, bookmarks, history, passwords and extensions straight from Arc, on both macOS and Windows.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Not moving to Dia?&lt;/strong&gt; Export your Spaces and tab links from Arc first, then import them into whichever browser you’re switching to.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;On Arc Search (iOS):&lt;/strong&gt; to save a list of your open tabs, open the Tab Switcher, tap Settings in the bottom left, then Export Data.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;On Arc Search (Android):&lt;/strong&gt; go to Settings &amp;gt; Storage &amp;gt; Export Data.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Until Dec 22, Arc will still get basic updates and fixes, but no new features.&lt;/p&gt; &lt;p&gt;Full details from Arc: &lt;a href="https://resources.arc.net/hc/en-us/articles/44412972248471-Arc-Sunset-Key-Dates-and-What-to-Expect"&gt;https://resources.arc.net/hc/en-us/articles/44412972248471-Arc-Sunset-Key-Dates-and-What-to-Expect&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Don’t wait until the last week. Back up your stuff now 🫡&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/null_compass"&gt; /u/null_compass &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xvxlua/psa_arc_shuts_down_on_dec_22_key_dates_so_you/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xvxlua/psa_arc_shuts_down_on_dec_22_key_dates_so_you/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/seshakiran&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/null_compass&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 0&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 0&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;hr/&gt;
-    &lt;h3&gt;💬 Replies&lt;/h3&gt;&lt;p&gt;No replies available.&lt;/p&gt;</content:encoded>
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/LoGiX247&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xvxlua/psa_arc_shuts_down_on_dec_22_key_dates_so_you/19sm7zy9fo22o/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Shame the TBC doesn’t make a follow-up on mobile browsing. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/null_compass&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xvxlua/psa_arc_shuts_down_on_dec_22_key_dates_so_you/19sm8mav3hbid/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Agreed, it stings. Arc Search on iOS will at least keep working as a plain browser after Dec 22, but without sync it&amp;#39;s not the same. There were leaked screenshots back in August hinting that a Dia iPhone app is in the works, so fingers crossed. Nothing official yet though.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+    </item>
+    <item>
+      <title>🍿 TBC, how can I get my data without talking to the dumb bot?</title>
+      <link>https://www.reddit.com/r/ArcBrowser/comments/1xw1z5j/tbc_how_can_i_get_my_data_without_talking_to_the/</link>
+      <guid>t3_1xw1z5j</guid>
+      <pubDate>Sat, 14 Nov 2026 13:06:25 +0000</pubDate>
+      <content:encoded>&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xw1z5j/tbc_how_can_i_get_my_data_without_talking_to_the/"&gt; &lt;img src="https://preview.redd.it/tlxw8nr5uk1i1.png?width=140&amp;amp;height=140&amp;amp;crop=1:1,smart&amp;amp;auto=webp&amp;amp;s=90cec0e8dbdb9f31d01133fe1d2dd2ac4bbd55eb" alt="TBC, how can I get my data without talking to the dumb bot?" title="TBC, how can I get my data without talking to the dumb bot?" /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/spacenglish"&gt; /u/spacenglish &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/gallery/1xw1z5j"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xw1z5j/tbc_how_can_i_get_my_data_without_talking_to_the/"&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;img src="https://preview.redd.it/tlxw8nr5uk1i1.png?width=140&amp;amp;height=140&amp;amp;crop=1:1,smart&amp;amp;auto=webp&amp;amp;s=90cec0e8dbdb9f31d01133fe1d2dd2ac4bbd55eb" alt="Reddit post image" /&gt;&lt;/p&gt;
+    &lt;div class="post-stats"&gt;
+      &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/spacenglish&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies fetched:&lt;/b&gt; 2&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Replies published:&lt;/b&gt; 2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 1 — /u/MDevonL&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xw1z5j/tbc_how_can_i_get_my_data_without_talking_to_the/19smicentlmp1/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I wonder if you’d have better luck going via atlassian GDPR&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;
+        &lt;div class="reddit-comment"&gt;
+          &lt;h4&gt;Reply 2 — /u/CAPSLOCTAVIUS&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/ArcBrowser/comments/1xw1z5j/tbc_how_can_i_get_my_data_without_talking_to_the/19smos70lnbj8/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Archie living in the future over there.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+        &lt;/div&gt;&lt;hr/&gt;</content:encoded>
+      <media:content url="https://preview.redd.it/tlxw8nr5uk1i1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=90cec0e8dbdb9f31d01133fe1d2dd2ac4bbd55eb" medium="image" />
     </item>
   </channel>
 </rss>

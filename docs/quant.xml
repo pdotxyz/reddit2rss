@@ -4,17 +4,17 @@
     <title>🍿 Reddit: r/quant</title>
     <link>https://www.reddit.com/r/quant/</link>
     <description>Top 1 daily posts from r/quant, with individual post statistics and nested replies.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 07:35:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 19:36:18 +0000</lastBuildDate>
     <item>
-      <title>🍿 Recommended sources for historical fixed income/credit data</title>
-      <link>https://www.reddit.com/r/quant/comments/1xv9xbq/recommended_sources_for_historical_fixed/</link>
-      <guid>t3_1xv9xbq</guid>
-      <pubDate>Fri, 13 Nov 2026 14:53:24 +0000</pubDate>
-      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Stock data is easily gatherable but fixed income seems to difficult. I have access to a terminal from school and I&amp;#39;m willing to cough up( to a limit), but from people&amp;#39;s experience, what&amp;#39;s the best way to gather data?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/zneeszy"&gt; /u/zneeszy &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xv9xbq/recommended_sources_for_historical_fixed/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xv9xbq/recommended_sources_for_historical_fixed/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+      <title>🍿 What is the current state of HFT in the book by Michael Lewis (Flash Boys, 2014)</title>
+      <link>https://www.reddit.com/r/quant/comments/1xw3g6a/what_is_the_current_state_of_hft_in_the_book_by/</link>
+      <guid>t3_1xw3g6a</guid>
+      <pubDate>Sat, 14 Nov 2026 14:16:36 +0000</pubDate>
+      <content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;2010 Flash Crash of HFT was a big topic in the news for a bit. What was the basic concepts there? There was even a major best seller book written. Did you read it? What did that 2010 HFT era evolve into? Does it still exist? Bigger than ever? Is the book outdated now? What is the current state of HFT in the book by Michael Lewis (Flash Boys, 2014)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/ZapsTheCan"&gt; /u/ZapsTheCan &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xw3g6a/what_is_the_current_state_of_hft_in_the_book_by/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xw3g6a/what_is_the_current_state_of_hft_in_the_book_by/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
     &lt;div class="post-stats"&gt;
       &lt;h3&gt;📊 Post statistics&lt;/h3&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/zneeszy&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Author:&lt;/b&gt; /u/ZapsTheCan&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Score:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Upvote ratio:&lt;/b&gt; N/A&lt;/li&gt;
         &lt;li&gt;&lt;b&gt;Total Reddit comments:&lt;/b&gt; N/A&lt;/li&gt;
@@ -25,14 +25,14 @@
     &lt;hr/&gt;
     &lt;h3&gt;💬 Replies (2)&lt;/h3&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 1 — /u/wisesheets&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xv9xbq/recommended_sources_for_historical_fixed/19sl0obls8shs/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;The school terminal helps until you need a copy you can keep. What&amp;#39;s been harder to source so far, the prices or the credit fundamentals?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 1 — /u/No_Brilliant_5955&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xw3g6a/what_is_the_current_state_of_hft_in_the_book_by/19smljpxiq2bn/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Fun read but it&amp;#39;s not really how the industry works. It&amp;#39;s basically one fight (latency arb in US equities circa 2010) told as good guys vs bad guys. Lewis kinda skips over the fact that spreads and retail costs dropped a ton during the exact period he&amp;#39;s complaining about. &lt;/p&gt; &lt;p&gt;Worst, most of the &amp;quot;front-running&amp;quot; was just market making and arb between exchanges and the flash crash was mostly a huge futures sell order hitting a thin book not HFTs going rogue. It&amp;#39;s pretty dated now too: everyone has the microwave towers and the shops that survived make markets in basically everything.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;
         &lt;div class="reddit-comment"&gt;
-          &lt;h4&gt;Reply 2 — /u/zneeszy&lt;/h4&gt;
-          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xv9xbq/recommended_sources_for_historical_fixed/19sl2lg0012dg/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
-          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;Mainly prices, I get kind of overwhelmed by the large amount of bonds listed for different categories, which makes it hard to decide which ones to choose and what not choose. The main idea would be just to scrape their closing prices, features like coupon rates, duration and convexity.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
+          &lt;h4&gt;Reply 2 — /u/777gg777&lt;/h4&gt;
+          &lt;p&gt;&lt;a href="https://www.reddit.com/r/quant/comments/1xw3g6a/what_is_the_current_state_of_hft_in_the_book_by/19smnfw31494w/"&gt;View reply on Reddit&lt;/a&gt;&lt;/p&gt;
+          &lt;blockquote&gt;&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;“Spreads dropping” is not necessarily a good measure of healthy price formation.&lt;/p&gt; &lt;p&gt;The liquidity you can get for retail is better but not sure it is better for institutional flow…&lt;/p&gt; &lt;p&gt;Not to mention the market is extremely fragmented and the relative disadvantage of those without a huge and expensive infrastructure setup has probably never been bigger.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;&lt;/blockquote&gt;
         &lt;/div&gt;&lt;hr/&gt;</content:encoded>
     </item>
   </channel>
