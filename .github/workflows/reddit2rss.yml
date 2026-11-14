@@ -20,18 +20,19 @@ jobs:
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
 
+      - name: Create virtual environment
+        run: uv venv .venv
+
       - name: Install Python dependencies
         run: |
-          uv pip install --system requests beautifulsoup4 feedgen
+          uv pip install --python .venv/bin/python \
+            requests \
+            beautifulsoup4 \
+            feedgen
 
       - name: Generate Reddit RSS feeds
         run: |
-          mapfile -t SUBREDDITS < <(grep -vE '^[[:space:]]*(#|$)' subreddits.txt)
-
-          for subreddit in "${SUBREDDITS[@]}"; do
-            echo "Processing r/$subreddit"
-            python reddit2rss.py "$subreddit"
-          done
+          .venv/bin/python reddit2rss.py
 
       - name: Move RSS files to docs
         run: |
