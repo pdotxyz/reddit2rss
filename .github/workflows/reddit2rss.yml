@@ -4,7 +4,7 @@ name: Build Reddit RSS
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [daily-reddit-rss]
+    types: [hourly-rss]
 
 permissions:
   contents: write
